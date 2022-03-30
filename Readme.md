@@ -1,7 +1,7 @@
 # Личный проект «Пинк»
 
 * Студент: [Александр Антипов](https://up.htmlacademy.ru/adaptive/25/user/1150811).
-* Наставник: `Захар Овчаров` (https://htmlacademy.ru/profile/id906939).
+* Наставник: [Захар Овчаров](https://htmlacademy.ru/profile/id906939).
 
 ---
 
