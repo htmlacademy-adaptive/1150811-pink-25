@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo logo"></a>
+      <nav class="page-header__main-nav main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a>Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть и закрыть меню</span></button>
+    </header>
+    <main class="form-main">
+      <img class="form__background-image" src="#" alt="Нью-Йоркская публичная библиотека"/>
+      <h1 class="form-main__title visually-hidden">Форма для конкурса</h1>
+      <p class="form-main__slogan slogan">Конкурс на самое безбашенное путешествие с Пинк</p>
+      <p class="form-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form__full-name full-name">
+          <label class="full-name__name name">Фамилия:
+            <input type="text" name="name" value="Укажите фамилию:*" required>
+          </label>
+          <label class="full-name__surname surname">Имя:
+            <input type="text" name="surname" value="Введите ваше имя:*" required>
+          </label>
+          <label class="full-name__patronymic patronymic">Отчество:
+            <input type="text" name="patronymic" value="Ну и отчество тоже">
+          </label>
+        </div>
+        <div class="form__checkboxes achievements">
+          <h2 class="achievements__title">Ваши безбашенные достижения в путешествии</h2>
+          <ul class="achievements__list achievements-list">
+            <li class="achievements-list__item checkbox-item">
+              <input type="checkbox" class="checkbox-item__input visually-hidden" name="checkbox-item" id="shark-selfie" value="shark-selfie"  checked>
+              <label class="checkbox-item__label" for="shark-selfie" >Сделал селфи с акулой</label>
+            </li>
+            <li class="achievements-list__item checkbox-item">
+              <input type="checkbox" class="checkbox-item__input visually-hidden" name="checkbox-item" id="sunburn" value="sunburn"  checked>
+              <label class="checkbox-item__label" for="sunburn" >Обгорел на пляже</label>
+            </li>
+            <li class="achievements-list__item checkbox-item">
+              <input type="checkbox" class="checkbox-item__input visually-hidden" name="checkbox-item" id="chuck" value="chuck">
+              <label class="checkbox-item__label" for="chuck" >Видел Чака Норриса</label>
+            </li>
+            <li class="achievements-list__item checkbox-item">
+              <input type="checkbox" class="checkbox-item__input visually-hidden" name="checkbox-item" id="souvenir-buyer" value="souvenir-buyer">
+              <label class="checkbox-item__label" for="souvenir-buyer" >Накупил сувениров</label>
+            </li>
+            <li class="achievements-list__item checkbox-item">
+              <input type="checkbox" class="checkbox-item__input visually-hidden" name="checkbox-item" id="tower" value="tower"  checked>
+              <label class="checkbox-item__label" for="tower" >Удержал башню</label>
+            </li>
+            <li class="achievements-list__item checkbox-item">
+              <input type="checkbox" class="checkbox-item__input visually-hidden" name="checkbox-item" id="hotel-destroyer" value="hotel-destroyer">
+              <label class="checkbox-item__label" for="hotel-destroyer" >Разгромил отель</label>
+            </li>
+          </ul>
+        </div>
+        <div class="form__user-contancts user-contacts">
+          <label class="user-contacts__phone users-phone">Номер телефона
+            <input type="tel" name="phone" value="Номер, пожалуйста" required>
+          </label>
+          <label class="user-contacts__email users-email">Адрес почты
+            <input type="email" name="email" value="Введите почту*" required>
+          </label>
+        </div>
+        <div class="form__radio application-type">
+          <h2 class="application-type__title">С каким приложением приложением путешествовали</h2>
+          <ul class="application-type__list application-type-list">
+            <li class="application-type-list__item radio-item">
+              <input type="radio" name="app" class="radio__input visually-hidden" id="ios">
+              <label for="ios" class="radio__ios">Pink для IOS</label>
+            </li>
+            <li class="application-type-list__item radio-item">
+              <input type="radio" name="app" class="radio__input visually-hidden" id="android">
+              <label for="android" class="radio__android">Pink на Android</label>
+            </li>
+            <li class="application-type-list__item radio-item">
+              <input type="radio" name="app" class="radio__input visually-hidden" id="windows">
+              <label for="windows" class="radio__windows">Windows Phone</label>
+            </li>
+          </ul>
+        </div>
+        <div class="form__comment comment">
+          <h2 class="comment__title">Опишите свои эмоции</h2>
+          <textarea class="comment__field" name="comment">Можно прям в красках, не стесняясь в выражениях
+          </textarea>
+        </div>
+        <button type="submit" class="form__submit" name="button">Отправить заявку</button>
+        <small>* &mdash; Обязательные поля</small>
+      </form>
+    </main>
+    <footer class="page-footer footer">
+      <a class="page-footer__logo logo logo--glasses"></a>
+      <ul class="page-footer__socials socials-list">
+        <li class="socials-list__item socials-icon">
+          <a href="#" class="socials-icon__vkontakte">
+            <svg>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-list__item socials-icon">
+          <a href="#" class="socials-icon__telegram">
+            <svg>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-list__item socials-icon">
+          <a href="#" class="socials-icon__youtube">
+            <svg>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__academy academy">
+        <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+          <svg></svg>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
