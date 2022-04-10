@@ -10,16 +10,16 @@
       <nav class="page-header__main-nav main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="#">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Фотографии</a>
+            <a class="site-list__link" href="catalog.html">Фотографии</a>
           </li>
           <li class="site-list__item">
             <a>Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="#">HTML Academy</a>
+            <a class="site-list__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -27,19 +27,19 @@
     </header>
     <main class="form-main">
       <img class="form__background-image" src="#" alt="Нью-Йоркская публичная библиотека"/>
-      <h1 class="form-main__title visually-hidden">Форма для конкурса</h1>
+      <h1 class="visually-hidden">Форма для конкурса</h1>
       <p class="form-main__slogan slogan">Конкурс на самое безбашенное путешествие с Пинк</p>
       <p class="form-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form__full-name full-name">
           <label class="full-name__name name">Фамилия:
-            <input type="text" name="name" value="Укажите фамилию:*" required>
+            <input class="full-name__input" type="text" name="name" value="Укажите фамилию:*" required>
           </label>
           <label class="full-name__surname surname">Имя:
-            <input type="text" name="surname" value="Введите ваше имя:*" required>
+            <input class="full-name__input" type="text" name="surname" value="Введите ваше имя:*" required>
           </label>
           <label class="full-name__patronymic patronymic">Отчество:
-            <input type="text" name="patronymic" value="Ну и отчество тоже">
+            <input class="full-name__input" type="text" name="patronymic" value="Ну и отчество тоже">
           </label>
         </div>
         <div class="form__checkboxes achievements">
@@ -73,10 +73,10 @@
         </div>
         <div class="form__user-contancts user-contacts">
           <label class="user-contacts__phone users-phone">Номер телефона
-            <input type="tel" name="phone" value="Номер, пожалуйста" required>
+            <input class="user-contacts__input" type="tel" name="phone" value="Номер, пожалуйста" required>
           </label>
           <label class="user-contacts__email users-email">Адрес почты
-            <input type="email" name="email" value="Введите почту*" required>
+            <input class="user-contacts__input" type="email" name="email" value="Введите почту*" required>
           </label>
         </div>
         <div class="form__radio application-type">
@@ -96,16 +96,16 @@
             </li>
           </ul>
         </div>
-        <div class="form__comment comment">
-          <h2 class="comment__title">Опишите свои эмоции</h2>
-          <textarea class="comment__field" name="comment">Можно прям в красках, не стесняясь в выражениях
+        <div class="form__comment comment-area">
+          <h2 class="comment-area__title">Опишите свои эмоции</h2>
+          <textarea class="comment-area__field" name="comment">Можно прям в красках, не стесняясь в выражениях
           </textarea>
         </div>
-        <button type="submit" class="form__submit" name="button">Отправить заявку</button>
-        <small>* &mdash; Обязательные поля</small>
+        <button class="form__submit" type="submit" name="button">Отправить форму</button>
+        <small class="form__footnote">* &mdash; Обязательные поля</small>
       </form>
     </main>
-    <footer class="page-footer footer">
+    <footer class="page-footer">
       <a class="page-footer__logo logo logo--glasses"></a>
       <ul class="page-footer__socials socials-list">
         <li class="socials-list__item socials-icon">
