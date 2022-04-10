@@ -10,16 +10,16 @@
       <nav class="page-header__main-nav main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="#">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a>Фотографии</a>
+            <a class="site-list__link">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Конкурс</a>
+            <a href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="#">HTML Academy</a>
+            <a class="site-list__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -29,9 +29,9 @@
       <img class="catalog-main__background-image" src="#" alt="Нью-Йоркская публичная библиотека"/>
       <h1 class="catalog-main__title slogan">Фотографии пользователей</h1>
       <p class="catalog-main__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-      <section class="catalog-main__gallery">
+      <section class="catalog-main__gallery gallery">
       <h2 class="visually-hidden">Фотогалерея</h2>
-        <article class="photo-section">
+        <article class="gallery__photo-section photo-section">
           <h3 class="visually-hidden">Пользовательское фото</h3>
           <div class="photo-section__panorama panorama">
             <p class="panorama__text">Панорама дня</p>
@@ -45,7 +45,7 @@
           </div>
           <div class="photo-section__desc desc">
           <dl class="desc__list desc-list">
-            <dt class="desc-list__username">Анна(5минут назад)</dt>
+            <dt class="desc-list__username">Анна<span class="desc-list__comment-time">(5минут назад)</span></dt>
               <dd class="desc-list__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</dd>
             <dt class="desc-list__like">Нравится:</dt>
               <dd class="desc-list__like-value">215</dd>
@@ -54,7 +54,7 @@
           </svg>
           </div>
         </article>
-        <article class="photo-section">
+        <article class="gallery__photo-section photo-section">
           <h3 class="visually-hidden">Пользовательское фото</h3>
           <div class="photo-section__image photo">
             <a href="#">
@@ -65,7 +65,7 @@
           </div>
           <div class="photo-section__desc desc">
           <dl class="desc__list desc-list">
-            <dt class="desc-list__username">Левон(5 часов назад)</dt>
+            <dt class="desc-list__username">Левон<span class="desc-list__comment-time">(5 часов назад)</span></dt>
               <dd class="desc-list__text">Вчера он на луну летал, сегодня в руки к нам попал.</dd>
             <dt class="desc-list__like">Нравится:</dt>
               <dd class="desc-list__like-value">356</dd>
@@ -74,7 +74,7 @@
           </svg>
           </div>
         </article>
-        <article class="photo-section">
+        <article class="gallery__photo-section photo-section">
           <h3 class="visually-hidden">Пользовательское фото</h3>
           <div class="photo-section__image photo">
             <picture>
@@ -83,7 +83,7 @@
           </div>
           <div class="photo-section__desc desc">
           <dl class="desc__list desc-list">
-            <dt class="desc-list__username">Антон(12 часов назад)</dt>
+            <dt class="desc-list__username">Антон<span class="desc-list__comment-time">(12 часов назад)</span></dt>
               <dd class="desc-list__text">Соседи будут рады!</dd>
             <dt class="desc-list__like">Нравится:</dt>
               <dd class="desc-list__like-value">666</dd>
@@ -92,7 +92,7 @@
           </svg>
           </div>
         </article>
-        <article class="photo-section">
+        <article class="gallery__photo-section photo-section">
           <h3 class="visually-hidden">Пользовательское фото</h3>
           <div class="photo-section__image photo">
             <picture>
@@ -101,7 +101,7 @@
           </div>
           <div class="photo-section__desc desc">
           <dl class="desc__list desc-list">
-            <dt class="desc-list__username">Борис(20 часов назад)</dt>
+            <dt class="desc-list__username">Борис<span class="desc-list__comment-time">(20 часов назад)</span></dt>
               <dd class="desc-list__text">Здесь могла быть ваша цитата о высоком и вечном.</dd>
             <dt class="desc-list__like">Нравится:</dt>
               <dd class="desc-list__like-value">215</dd>
@@ -110,7 +110,7 @@
           </svg>
           </div>
         </article>
-        <article class="photo-section">
+        <article class="gallery__photo-section photo-section">
           <h3 class="visually-hidden">Пользовательское фото</h3>
           <div class="photo-section__image photo">
             <picture>
@@ -119,7 +119,7 @@
           </div>
           <div class="photo-section__desc desc">
           <dl class="desc__list desc-list">
-            <dt class="desc-list__username">Сергей(25 часов назад)</dt>
+            <dt class="desc-list__username">Сергей<span class="desc-list__comment-time">(25 часов назад)</span></dt>
               <dd class="desc-list__text">Самая кубанская в мире!</dd>
             <dt class="desc-list__like">Нравится:</dt>
               <dd class="desc-list__like-value">4</dd>
@@ -128,7 +128,7 @@
           </svg>
           </div>
         </article>
-        <article class="photo-section">
+        <article class="gallery__photo-section photo-section">
           <h3 class="visually-hidden">Пользовательское фото</h3>
           <div class="photo-section__image photo">
             <picture>
@@ -137,7 +137,7 @@
           </div>
           <div class="photo-section__desc desc">
           <dl class="desc__list desc-list">
-            <dt class="desc-list__username">Максим(40 часов назад)</dt>
+            <dt class="desc-list__username">Максим<span class="desc-list__comment-time">(40 часов назад)</span></dt>
               <dd class="desc-list__text">Где снег-то?</dd>
             <dt class="desc-list__like">Нравится:</dt>
               <dd class="desc-list__like-value">150</dd>
@@ -146,7 +146,7 @@
           </svg>
           </div>
         </article>
-        <article class="photo-section">
+        <article class="gallery__photo-section photo-section">
           <h3 class="visually-hidden">Пользовательское фото</h3>
           <div class="photo-section__image photo">
             <picture>
@@ -155,7 +155,7 @@
           </div>
           <div class="photo-section__desc desc">
           <dl class="desc__list desc-list">
-            <dt class="desc-list__username">Надежда(45 часов назад)</dt>
+            <dt class="desc-list__username">Надежда<span class="desc-list__comment-time">(45 часов назад)</span></dt>
               <dd class="desc-list__text">Всем GM и взаимные лайки!</dd>
             <dt class="desc-list__like">Нравится:</dt>
               <dd class="desc-list__like-value">2560</dd>
@@ -172,16 +172,16 @@
           <img src="#" alt="Фото пользователя">
         </picture>
         <ul class="adjustment-section__instrument intsrument-list">
-          <li class="instrument-list__item crop">
-            <svg>
+          <li class="instrument-list__item instrument">
+            <svg class="instrument__crop">
             </svg>
           </li>
-          <li class="instrument-list__item fill">
-            <svg>
+          <li class="instrument-list__item instrument">
+            <svg class="instrument__fill">
             </svg>
           </li>
-          <li class="instrument-list__item contrast">
-            <svg>
+          <li class="instrument-list__item instrument">
+            <svg class="instrument__contrast">
             </svg>
           </li>
         </ul>
@@ -190,11 +190,11 @@
             <span class="visually-hidden">Изменить значение</span>
           </div>
         </div>
-        <button class="adjustment-section__submit" type="button" name="submit"></button>
-        <button class="adjustment-section__cancel" type="button" name="cancel"></button>
+        <button class="adjustment-section__submit" type="button" name="submit">Запостить</button>
+        <button class="adjustment-section__cancel" type="button" name="cancel">Отмена</button>
       </section>
     </main>
-    <footer class="page-footer footer">
+    <footer class="page-footer">
       <a class="page-footer__logo logo logo--glasses"></a>
       <ul class="page-footer__socials socials-list">
         <li class="socials-list__item socials-icon">
