@@ -1,0 +1,26 @@
+.features {
+  display: none;
+}
+
+.features__item-name {
+  @include regular-text;
+  line-height: 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.features__item {
+  background-color: #FFF;
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    display: grid;
+    width: 152px;
+  }
+  .features__gap {
+    display: block;
+    width: 152px;
+    height: 75px;
+  }
+}

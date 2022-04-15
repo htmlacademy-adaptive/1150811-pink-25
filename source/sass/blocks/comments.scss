@@ -1,3 +1,11 @@
-.comments {
-  background-color: #E5E5E5;
+.comments__content {
+  display: inline-block;
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .comments__content {
+    display: grid;
+    width: 620px;
+  }
 }

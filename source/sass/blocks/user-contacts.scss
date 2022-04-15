@@ -1,5 +1,5 @@
 .user-contacts__input {
-  font-weight: 300;
-  font-size: 18px;
+  @include regular-text;
+  line-height: 30px;
   text-align: left;
 }

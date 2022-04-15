@@ -1,0 +1,106 @@
+.tariffes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-gray;
+  width: 320px;
+}
+
+.tariffes__list--mobile-visible {
+  display: flex;
+  flex-direction: column;
+  width:280px;
+}
+
+.tariffes__ribbon {
+  background-color: $color-cerise;
+}
+
+.tariffes__tariff {
+  display: block;
+  width: 280px;
+  background-color: $color-midnight;
+  margin: 0;
+}
+
+.tariffes__name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.tariffes__value {
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.tariffes__tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFF;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.tariffes__tag-yes {
+  display: block;
+  width: 27px;
+  height: 27px;
+  background: url(../img/yes-icon.svg) no-repeat;
+}
+
+.tariffes__tag-no {
+  display: block;
+  width: 27px;
+  height: 27px;
+  background: url(../img/no-icon.svg) no-repeat;
+}
+
+.tariffes__buttons {
+  background-color: $color-gray;
+}
+
+@media (min-width: $tablet-width) {
+  .tariffes {
+    display: block;
+    width: 660px;
+  }
+  .tariffes__wrapper {
+    display: grid;
+    grid-template-columns: 152px 152px 152px 152px;
+    grid-column-gap: 2px;
+    width: 616px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .tariffes__list {
+    display: grid;
+    width: 152px;
+  }
+  .tariffes__tariff {
+    width: 152px;
+  }
+  .tariffes__buttons {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tariffes {
+    width: 1200px;
+  }
+  .tariffes__wrapper {
+    width: 616px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}

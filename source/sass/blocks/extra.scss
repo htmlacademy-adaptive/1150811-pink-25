@@ -1,0 +1,32 @@
+.extra {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .extra {
+    display: grid;
+  }
+  .extra__image {
+    display: block;
+    width: 238;
+    height: 276;
+  }
+  .extra__title {
+    display: inline-block;
+    width: 168px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .extra__text {
+    display: inline-block;
+    width: 310px;
+    @include regular-text;
+  }
+  .extra__link {
+    font-weight: 300;
+    font-size: 14px;
+    text-decoration: underline;
+    color: $color-cerise;
+  }
+}

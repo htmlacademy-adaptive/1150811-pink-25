@@ -1,13 +1,12 @@
 .benefit__title {
   font-weight: 400;
   font-size: 18px;
+  line-height: 24px;
   text-align: center;
-  color: #000000;
 }
 
 .benefit__text {
-  font-weight: 300;
-  font-size: 14px;
+  @include regular-text;
+  line-height: 30px;
   text-align: center;
-  color: #000000;
 }

@@ -1,0 +1,12 @@
+.socials-list {
+  display: flex;
+  width: 280px;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.socials-list__item {
+  display: block;
+  width: 54px;
+  height: 54px;
+}

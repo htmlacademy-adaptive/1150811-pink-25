@@ -2,10 +2,22 @@
   font-weight: 200;
   font-size: 24px;
   text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
+  line-height: 120%;
+  color: #FFF;
 }
 
-.slogan--black {
-  color: #000000;
+.slogan--color-midnight {
+  color: $color-midnight;
+}
+
+@media (min-width: $tablet-width) {
+  .slogan {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slogan {
+    font-size: 50px;
+  }
 }

@@ -1,17 +1,35 @@
 .comment {
-  background-color: #ffffff;
+  background-color: #FFF;
 }
 
 .comment__title {
   font-weight: 400;
   font-size: 18px;
+  line-height: 30px;
   text-align: center;
-  color: #000000;
+}
+
+.comment__desc {
+  display: none;
 }
 
 .comment__text {
-  font-weight: 300;
-  font-size: 14px;
+  @include regular-text;
+  line-height: 30px;
   text-align: center;
-  color: #000000;
+}
+
+@media (min-width: $mobile-width) {
+  .comment__desc {
+    display: inline-block;
+    @include regular-text;
+    line-height: 30px;
+    text-align: center;
+  }
+  .comment__text {
+    @include regular-text;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
 }
