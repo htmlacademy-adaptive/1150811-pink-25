@@ -1,33 +1,39 @@
 .desc-list__username {
   font-weight: 400;
   font-size: 14px;
+  line-height: 24px;
   text-align: left;
+  color: $color-midnight;
 }
 
 .desc-list__comment-time {
   font-weight: 200;
   font-size: 12px;
+  line-height: 30px;
   text-transform: uppercase;
+  color: $color-midnight;
 }
 
 .desc-list__text {
-  font-weight: 300;
-  font-size: 14px;
+  @include regular-text;
+  line-height: 30px;
   text-align: left;
 }
 
 .desc-list__like {
   font-weight: 300;
   font-size: 12px;
+  line-height: 30px;
   text-align: center;
   text-transform: uppercase;
-  color: #D22856;
+  color: $color-cerise;
 }
 
 .desc-list__like-value {
   font-weight: 300;
   font-size: 12px;
+  line-height: 30px;
   text-align: center;
   text-transform: uppercase;
-  color: #D22856;
+  color: $color-cerise;
 }

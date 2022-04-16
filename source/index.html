@@ -2,11 +2,19 @@
 <html lang="ru">
   <head>
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo logo"></a>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo logo">
+          <picture>
+            <img class="logo__image" src="img/pink-logo-mobile.svg" alt="логотип Pink">
+          </picture>
+        </a>
+        <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть и закрыть меню</span></button>
+      </div>
       <nav class="page-header__main-nav main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -19,47 +27,44 @@
             <a class="site-list__link" href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">HTML Academy</a>
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </nav>
-      <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть и закрыть меню</span></button>
     </header>
     <main class="page-main">
       <h1 class="page-main__title visually-hidden">Главная страница</h1>
-      <section class="intro">
+      <section class="page-main__intro intro">
         <h2 class="intro__heading visually-hidden">Приложение Pink</h2>
-        <img class="intro__background-image" src="#" alt="Нью-Йоркская публичная библиотека"/>
         <p class="intro__slogan slogan">Взгляните на жизнь иначе!</p>
-        <img class="intro__main-image" src="#" alt="Смартфон в руке">
-        <a class="intro__main-link main-link" href="#">Скачать приложение</a>
+        <picture>
+          <img class="intro__main-image" src="img/phone-mobile.png" alt="Смартфон в руке">
+        </picture>
+        <a class="intro__main-link main-link" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
         <ul class="intro__market-links market-links">
           <li class="market-links__item market-icon">
             <a href="#" class="market-icon__appstore">
-              <svg>
-              </svg>
+              <img class="market-icon__image" width="47" height="56" src="img/apple-logo.svg" alt="App Store"/>
             </a>
           </li>
           <li class="market-links__item market-icon">
             <a href="#" class="market-icon__android">
-              <svg>
-              </svg>
+              <img class="market-icon__image" width="43" height="47" src="img/android-logo.svg" alt="Android Market"/>
             </a>
           </li>
           <li class="market-links__item market-icon">
             <a href="#" class="market-icon__windows">
-              <svg>
-              </svg>
+              <img class="market-icon__image" width="44" height="41" src="img/microsoft-logo.svg" alt="Microsoft Store"/>
             </a>
           </li>
         </ul>
         <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
-      <div class="slogan-box">
-        <p class="slogan-box__content slogan slogan--black">Устали от серости мегаполиса?</p>
-        <p class="slogan-box__content slogan slogan--black">Нам есть, что вам предложить</p>
+      <div class="page-main__slogan-box slogan-box">
+        <p class="slogan-box__content slogan slogan--color-midnight">Устали от серости мегаполиса?</p>
+        <p class="slogan-box__content slogan slogan--color-midnight">Нам есть, что вам предложить!</p>
       </div>
-      <section class="benefits">
+      <section class="page-main__benefits benefits">
         <h2 class="benefits__heading visually-hidden">Преимущества</h2>
         <div class="benefits__content benefit">
           <h3 class="benefit__title">Поднимает настроение</h3>
@@ -73,54 +78,102 @@
           <h3 class="benefit__title">Заводит новых друзей</h3>
           <p class="benefit__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </div>
-        <img class="benefits__image" src="#" alt="Смартфон"/>
+        <img class="benefits__image" src="img/smartphone-smile.png" alt="Смартфон"/>
+        <div class="benefits__extra extra">
+          <img class="extra__image" src="img/timer.svg" alt="Таймер">
+          <h3 class="extra__title">Эффект на 24 часа!</h3>
+          <p class="extra__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="extra__link">Узнать больше об исследовании</a>
+        </div>
       </section>
-      <section class="comments">
+      <section class="page-main__comments comments">
         <div class="comments__content comment">
           <h3 class="comment__title">Николай Петров</h3>
+          <p class="comment__desc">25 лет, водитель трамвая</p>
           <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </div>
         <div class="comments__buttons carousel-buttons">
-          <button class="carousel-buttons button" type="button" name="carousel"></button>
-          <button class="carousel-buttons button" type="button" name="carousel"></button>
-          <button class="carousel-buttons button" type="button" name="carousel"></button>
+          <button class="carousel-buttons__button" type="button" name="carousel"></button>
+          <button class="carousel-button__button" type="button" name="carousel"></button>
+          <button class="carousel-buttons__button" type="button" name="carousel"></button>
         </div>
       </section>
-      <div class="tariffes">
-        <div class="tariffes__ribbon hit-ribbon">
-          <p class="hit-ribbon__text">Хит</p>
+      <section class="page-main__tariffes tariffes">
+        <h2 class="visually-hidden">Тарифы</h2>
+        <div class="tariffes__wrapper">
+          <ul class="tariffes__list features">
+            <li>
+              <div class="features__gap"></div> <!-- Нужен для сетки  -->
+            </li>
+            <li class="features__item">
+              <p class="features__item-name">Розовый фильтр</p>
+            </li>
+            <li class="features__item" >
+              <p class="features__item-name">Смайлики</p>
+            </li>
+            <li class="features__item" >
+              <p class="features__item-name">Комментарии</p>
+            </li>
+          </ul>
+          <ul class="tariffes__list">
+            <li class="tariffes__tariff">
+              <p class="tariffes__name">База</p>
+              <p class="tariffes__value">1,99 USD</p>
+            </li>
+            <li class="tariffes__tag">
+              <div class="tariffes__tag-yes"></div>
+            </li>
+            <li class="tariffes__tag">
+              <div class="tariffes__tag-no"></div>
+            </li>
+            <li class="tariffes__tag">
+              <div class="tariffes__tag-no"></div>
+            </li>
+          </ul>
+          <ul class="tariffes__list tariffes__list--mobile-visible">
+            <li class="tariffes__tariff">
+              <div class="tariffes__ribbon hit-ribbon visually-hidden">
+                <p class="hit-ribbon__text">Хит</p>
+              </div>
+              <p class="tariffes__name">Стандарт</p>
+              <p class="tariffes__value">3,99 USD</p>
+            </li>
+            <li class="tariffes__tag">
+              <div class="tariffes__tag-yes"></div>
+            </li>
+            <li class="tariffes__tag">
+              <div class="tariffes__tag-yes"></div>
+            </li>
+            <li class="tariffes__tag">
+              <div class="tariffes__tag-no"></div>
+            </li>
+          </ul>
+
+          <ul class="tariffes__list">
+            <li class="tariffes__tariff">
+              <p class="tariffes__name">Анлим</p>
+              <p class="tariffes__value">9,99 USD</p>
+            </li>
+            <li class="tariffes__tag">
+              <div class="tariffes__tag-yes"></div>
+            </li>
+            <li class="tariffes__tag">
+              <div class="tariffes__tag-yes"></div>
+            </li>
+            <li class="tariffes__tag">
+              <div class="tariffes__tag-yes"></div>
+            </li>
+          </ul>
         </div>
-        <dl class="tarrifes__prices price-list">
-          <div class="tariff">
-            <dt class="tariff__name tariff-name">Стандарт</dt>
-              <dd class="tariff__value tariff-value">3,99 USD</dd>
-            </div>
-          </dl>
+        <div class="tariffes__buttons carousel-buttons">
+          <button class="carousel-buttons__button" type="button" name="carousel"></button>
+          <button class="carousel-button__button" type="button" name="carousel"></button>
+          <button class="carousel-button__button" type="button" name="carousel"></button>
         </div>
-      <div class="features">
-        <ul class="features__list features-list">
-          <li class="features-list__item features-item" >
-            <p class="features-item__name">Розовый фильтр</p>
-          </li>
-          <li class="features-list__item features-item" >
-            <p class="features-item__name">Смайлики</p>
-          </li>
-          <li class="features-list__item features-item" >
-            <p class="features-item__name">Комментарии</p>
-          </li>
-        </ul>
-        <div class="features__tag tag tag--yes"></div>
-        <div class="features__tag tag tag--yes"></div>
-        <div class="features__tag tag tag--no"></div>
-        <div class="comments__buttons carousel-buttons">
-          <button class="features-buttons button" type="button" name="carousel"></button>
-          <button class="features-buttons button" type="button" name="carousel"></button>
-          <button class="features-buttons button" type="button" name="carousel"></button>
-        </div>
-      </div>
-      <section class="contacts">
+      </section>
+      <section class="page-main__contacts contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <p class="contacts__slogan slogan slogan--black">Остались вопросы? Свяжитесь с нами!</p>
+        <p class="contacts__slogan slogan slogan--color-midnight">Остались вопросы? Свяжитесь с нами!</p>
         <dl class="contacts__list contacts-list">
           <div class="contacts-list__item contact">
             <dt class="contact__text">Звоните:</dt>
@@ -136,36 +189,36 @@
           </div>
         </dl>
       </section>
-      <div class="map">
-        <img class="map__img" src="#" alt="Карта">
-        <img class="map__pin" src="#" alt="Указатель на карте">
+      <div class="page-main__map map">
+        <h2 class="visually-hidden">htmlacademy на карте</h2>
+        <img class="map__marker" src="img/map-marker.png" alt="Указатель на карте">
       </div>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo logo logo--glasses"></a>
+      <a class="page-footer__logo footer-logo">
+        <img class="footer-logo__image" src="img/logo-pink-glasses.svg" alt="логотип Pink">
+      </a>
       <ul class="page-footer__socials socials-list">
         <li class="socials-list__item socials-icon">
           <a href="#" class="socials-icon__vkontakte">
-            <svg>
-            </svg>
+            <img class="footer-logo__image" src="img/vk-icon.svg" alt="логотип Pink">
           </a>
         </li>
         <li class="socials-list__item socials-icon">
           <a href="#" class="socials-icon__telegram">
-            <svg>
-            </svg>
+            <img class="footer-logo__image" src="img/telegram-icon.svg" alt="логотип Pink">
           </a>
         </li>
         <li class="socials-list__item socials-icon">
           <a href="#" class="socials-icon__youtube">
-            <svg>
-            </svg>
+            <img class="footer-logo__image" src="img/youtube-icon.svg" alt="логотип Pink">
           </a>
         </li>
       </ul>
       <div class="page-footer__academy academy">
         <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
-          <svg></svg>
+          <svg>
+          </svg>
         </a>
       </div>
     </footer>

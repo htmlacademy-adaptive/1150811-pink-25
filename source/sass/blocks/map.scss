@@ -1,3 +1,23 @@
 .map {
+  background-image: url("../img/map-mobile.png");
+  background-repeat: no-repeat;
   background-color: #E5E5E5;
+  width: 320px;
+  height: 200px;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    background-image: url("../img/map-tablet.png");
+    width: 660px;
+    height: 374px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    background-image: url("../img/map-desktop.png");
+    width: 1200px;
+    height: 502px;
+  }
 }

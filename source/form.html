@@ -5,26 +5,33 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo logo"></a>
-      <nav class="page-header__main-nav main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a>Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть и закрыть меню</span></button>
-    </header>
+    <body>
+      <header class="page-header">
+        <div class="page-header__wrapper">
+          <a class="page-header__logo logo">
+            <picture>
+              <img class="logo__image" src="img/pink-logo-mobile.svg" alt="логотип Pink">
+            </picture>
+          </a>
+          <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть и закрыть меню</span></button>
+        </div>
+        <nav class="page-header__main-nav main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a>Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
     <main class="form-main">
       <img class="form__background-image" src="#" alt="Нью-Йоркская публичная библиотека"/>
       <h1 class="visually-hidden">Форма для конкурса</h1>
@@ -106,30 +113,30 @@
       </form>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo logo logo--glasses"></a>
+      <a class="page-footer__logo footer-logo">
+        <img class="footer-logo__image" src="img/logo-pink-glasses.svg" alt="логотип Pink">
+      </a>
       <ul class="page-footer__socials socials-list">
         <li class="socials-list__item socials-icon">
           <a href="#" class="socials-icon__vkontakte">
-            <svg>
-            </svg>
+            <img class="footer-logo__image" src="img/vk-icon.svg" alt="логотип Pink">
           </a>
         </li>
         <li class="socials-list__item socials-icon">
           <a href="#" class="socials-icon__telegram">
-            <svg>
-            </svg>
+            <img class="footer-logo__image" src="img/telegram-icon.svg" alt="логотип Pink">
           </a>
         </li>
         <li class="socials-list__item socials-icon">
           <a href="#" class="socials-icon__youtube">
-            <svg>
-            </svg>
+            <img class="footer-logo__image" src="img/youtube-icon.svg" alt="логотип Pink">
           </a>
         </li>
       </ul>
       <div class="page-footer__academy academy">
         <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
-          <svg></svg>
+          <svg>
+          </svg>
         </a>
       </div>
     </footer>

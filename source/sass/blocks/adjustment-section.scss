@@ -5,13 +5,15 @@
 .adjustment-section__submit {
   font-weight: 400;
   font-size: 18px;
+  line-height: 18px;
   text-align: center;
-  color: #D22856;
+  color: $color-cerise;
 }
 
 .adjustment-section__cancel {
   font-weight: 400;
   font-size: 18px;
+  line-height: 18px;
   text-align: center;
-  color: #283645;
+  color: hsla(211, 27%, 21%, .1);
 }

@@ -1,6 +1,13 @@
 .main-link {
+  display: inline-block;
+  width:280px;
+
   font-weight: 400;
   font-size: 18px;
+  line-height: 55px;
   text-align: center;
-  color: #ffffff;
+  color: #FFF;
+
+  border: 3px solid #FFF;
+  border-radius: 29px;
 }

@@ -1,10 +1,32 @@
 .intro {
+  background: url(../img/back-mobile.jpg) no-repeat;
   background-color: #1D2631;
+}
+
+.intro__slogan {
+  width: 280px;
 }
 
 .intro__text {
   font-weight: 200;
   font-size: 14px;
+  line-height: 24px;
   text-align: center;
-  color: #ffffff;
+  color: #FFF;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    background: url(../img/back-tablet.jpg) no-repeat;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    display: block;
+    position: relative;
+    top: -89px;
+    z-index: -1;
+    background: url(../img/back-desktop.jpg) no-repeat;
+  }
 }
