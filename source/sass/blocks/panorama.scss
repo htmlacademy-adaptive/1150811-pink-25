@@ -1,7 +1,3 @@
-.panorama {
-  background-color: #D22856;
-}
-
 .panorama__text {
   font-weight: 300;
   font-size: 14px;
@@ -9,4 +5,37 @@
   text-align: center;
   text-transform: uppercase;
   color: #FFF;
+}
+
+.panorama__image {
+  display: block;
+  width: 320px;
+  height: 137px;
+}
+
+.panorama__desc {
+  display: flex;
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .panorama__image {
+    width: 660px;
+    height: 509px;
+  }
+  .panorama__desc {
+    display: grid;
+    width: 620px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .panorama__image {
+    width: 1200px;
+    height: 506px;
+  }
+  .panorama__desc {
+    display: grid;
+    width: 940px;
+  }
 }

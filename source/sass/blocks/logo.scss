@@ -1,7 +1,9 @@
 .logo {
 display: block;
+width: 75px;
 padding-top: 22px;
 padding-bottom: 21px;
+padding-left: 20px;
 }
 
 .logo__image {
@@ -14,4 +16,28 @@ padding-bottom: 21px;
 
 .logo__image:active {
   opacity: 0.5;
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+  display: block;
+  width: 146px;
+  padding-top: 17px;
+  padding-bottom: 29px;
+  padding-left: 20px;
+  }
+  .logo__image {
+    width: 145px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+  display: block;
+  width: 148px;
+  padding-left: 130px;
+  }
+  .logo__image {
+    width: 147px;
+  }
 }

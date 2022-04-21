@@ -1,5 +1,77 @@
+.form-main {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.form-main__slogan-wrapper {
+  display: block;
+  width: 320px;
+  height: 171px;
+  background: url(../img/back-mobile.jpg) no-repeat;
+}
+
+.form-main__slogan {
+  display: inline-block;
+  width: 228px;
+}
+
 .form-main__text {
+  display: inline-block;
   @include regular-text;
   line-height: 30px;
   text-align: center;
+  width: 280px;
+}
+
+.form-main__form {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .form-main {
+    width: 660px;
+  }
+  .form-main__slogan-wrapper {
+    width: 660px;
+    background: url(../img/back-tablet.jpg) no-repeat;
+  }
+  .form-main__slogan {
+    display: inline-block;
+    width: 620px;
+  }
+  .form-main__text {
+    width: 490px;
+  }
+  .form-main__form {
+    display: grid;
+    width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-main {
+    width: 1200px;
+  }
+  .form-main__slogan-wrapper {
+    width: 1200px;
+    background: url(../img/back-desktop.jpg) no-repeat;
+  }
+  .form-main__slogan {
+    display: inline-block;
+    width: 747px;
+  }
+  .form-main__text {
+    width: 756px;
+  }
+  .form-main__form {
+    display: grid;
+    width: 1200px;
+  }
 }

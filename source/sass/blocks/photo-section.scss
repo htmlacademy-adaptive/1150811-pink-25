@@ -1,0 +1,29 @@
+.photo-section__image {
+  display: block;
+  width:280px;
+  height: 180px;
+}
+
+.photo-section__desc {
+  display: flex;
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-section__image {
+    width:300px;
+    height: 300px;
+  }
+
+  .photo-section__desc {
+    display: flex;
+    width: 300px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photo-section__image {
+    width:300px;
+    height: 400px;
+  }
+}

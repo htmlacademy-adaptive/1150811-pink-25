@@ -29,6 +29,7 @@
   width: 23px;
   height: 23px;
   cursor: pointer;
+  padding-right: 12px;
 }
 
 @media (min-width: $tablet-width) {
@@ -44,9 +45,10 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
+    display: flex;
+    position: absolute;
     width: 1200px;
     margin: 0 auto;
-    display: flex;
     flex-direction: row;
     background-color: hsla(0, 0%, 0%, 0.3);
   }
