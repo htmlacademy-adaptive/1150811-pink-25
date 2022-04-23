@@ -1,0 +1,43 @@
+.panorama-desc {
+  background-color: $color-gray;
+}
+
+.panorama-desc-list__username {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+  color: $color-midnight;
+}
+
+.desc-list__comment-time {
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $color-midnight;
+}
+
+.panorama-desc-list__text {
+  @include regular-text;
+  line-height: 30px;
+  text-align: left;
+}
+
+.panorama-desc-list__like {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-cerise;
+}
+
+.panorama-desc-list__like-value {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-cerise;
+}

@@ -33,11 +33,12 @@
         </nav>
       </header>
     <main class="form-main">
-      <img class="form__background-image" src="#" alt="Нью-Йоркская публичная библиотека"/>
       <h1 class="visually-hidden">Форма для конкурса</h1>
-      <p class="form-main__slogan slogan">Конкурс на самое безбашенное путешествие с Пинк</p>
+      <div class="form-main__slogan-wrapper">
+        <p class="form-main__slogan slogan">Конкурс на самое безбашенное путешествие с Пинк</p>
+      </div>
       <p class="form-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="form__main-form form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form__full-name full-name">
           <label class="full-name__name name">Фамилия:
             <input class="full-name__input" type="text" name="name" value="Укажите фамилию:*" required>
@@ -111,6 +112,18 @@
         <button class="form__submit" type="submit" name="button">Отправить форму</button>
         <small class="form__footnote">* &mdash; Обязательные поля</small>
       </form>
+      <div class="form-main__modal modal-negative visually-hidden">
+        <p class="modal-negative__text">Что-то пошло не так!</p>
+        <p class="modal-negative__desc">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal-negative__button" type="button" name="button-negative">Ок</button>
+      </div>
+      <div class="form-main__modal modal-positive visually-hidden">
+        <p class="modal-positive__text">Ваша заявка отправлена</p>
+        <p class="modal-positive__desc">Спасибо за участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+        <div class="modal-positive__button-wrapper">
+          <button class="modal-positive__button" type="button" name="button-positive">Закрыть окно</button>
+        </div>
+      </div>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo footer-logo">

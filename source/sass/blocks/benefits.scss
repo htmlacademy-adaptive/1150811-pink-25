@@ -5,4 +5,39 @@
 .benefits__content {
   display: inline-block;
   width: 280px;
+  padding-bottom: 31px;
+}
+
+.benefits__image {
+  margin-top: 10px;
+}
+
+.benefits__extra {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .benefits__extra {
+    display: grid;
+    background-color: #FFF;
+    width: 660px;
+    z-index: 1;
+  }
+  .benefits__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 328px;
+    padding-bottom: 34px;
+  }
+  .benefits__image {
+    display: block;
+    position: absolute;
+    align-self: flex-start;
+    left: 22px;
+    top: 10px;
+    margin-top: 0px;
+    z-index: 1;
+
+  }
 }

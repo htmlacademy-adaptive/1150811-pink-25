@@ -10,8 +10,8 @@
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 15px;
-  padding-bottom: 16px;
+  padding-top: 22px;
+  padding-bottom: 20px;
   border-bottom: 1px solid #000;
   box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15);
 }
@@ -32,16 +32,15 @@
   .site-list {
     display: flex;
     flex-direction: row;
-    width: 660px;
+    justify-content: space-between;
+    width: 620px;
   }
   .site-list__item {
-    font-weight: 400;
-    font-size: 18px;
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 15px;
-    padding-bottom: 16px;
+    display: inline-block;
+    font-weight: 300;
+    line-height: 18px;
+    text-transform: none;
+    padding-top: 45px;
     border-bottom: none;
-    box-shadow: none;
   }
 }

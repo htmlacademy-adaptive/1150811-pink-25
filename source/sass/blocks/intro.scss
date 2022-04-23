@@ -5,28 +5,119 @@
 
 .intro__slogan {
   width: 280px;
+  padding-top: 26px;
+  padding-bottom: 22px;
+}
+
+.intro__main-image {
+  display: block;
+  padding-top: 6px;
+  padding-bottom: 24px;
+}
+
+.intro__main-link {
+  display: inline-block;
+  width:278px;
+}
+
+.market-links {
+  display: flex;
+  align-items:baseline;
+  justify-content: space-between;
+  width: 204px;
+  padding-top: 30px;
 }
 
 .intro__text {
+  display: inline-block;
+  width: 230px;
   font-weight: 200;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
   color: #FFF;
+  padding-top: 4px;
+  padding-bottom: 18px;
 }
 
 @media (min-width: $tablet-width) {
   .intro {
     background: url(../img/back-tablet.jpg) no-repeat;
   }
+  .intro__main-image {
+    display: block;
+    position: absolute;
+    padding-top: 74px;
+  }
+  .intro__slogan {
+    display: inline-block;
+    width: 188px;
+    padding-top: 94px;
+    padding-left: 75px;
+    padding-bottom: 30px;
+  }
+  .intro__main-link {
+    display: inline-block;
+    width:294px;
+    z-index: 1;
+    margin-left: 20px;
+  }
+  .market-links {
+    align-items: center;
+    width: 204px;
+    z-index: 1;
+    padding-top: 45px;
+    margin-left: 66px;
+  }
+  .intro__text {
+    width: 300px;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFF;
+    padding-top: 11px;
+    padding-bottom: 96px;
+    padding-left: 20px;
+    z-index: 1;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .intro {
-    display: block;
-    position: relative;
-    top: -89px;
-    z-index: -1;
     background: url(../img/back-desktop.jpg) no-repeat;
+  }
+  .intro__main-image {
+    padding-top: 208px;
+    padding-left: 146px;
+  }
+  .intro__slogan {
+    display: inline-block;
+    width: 300px;
+    padding-top: 210px;
+    padding-left: 130px;
+    padding-bottom: 35px;
+  }
+  .intro__main-link {
+    width:294px;
+    margin-left: 130px;
+  }
+  .market-links {
+    align-items: baseline;
+    padding-top: 66px;
+    margin-left: 176px;
+  }
+  .intro__text {
+    width: 300px;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFF;
+    padding-top: 50px;
+    padding-bottom: 125px;
+    padding-left: 130px;
+    z-index: 1;
+    margin: 0;
   }
 }

@@ -1,0 +1,12 @@
+.gallery__photo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+    .gallery__photo-section {
+    width: 300px;
+  }
+}
