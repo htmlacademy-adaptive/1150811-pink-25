@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
+    <base href="https://htmlacademy-adaptive.github.io/1150811-pink-25/8/">
+</head>
+  <body>
+    <div class="page-container">
+      <header class="page-header">
+        <div class="page-header__wrapper">
+          <a class="page-header__logo logo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-stars-desktop.svg" width="147">
+              <source media="(min-width: 660px)" srcset="img/logo-white-tablet.svg" width="145">
+              <img class="logo__image" src="img/logo-white-mobile.svg" alt="логотип Pink" width="74">
+            </picture>
+          </a>
+          <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть и закрыть меню</span></button>
+        </div>
+        <nav class="page-header__main-nav main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="form-main">
+        <h1 class="visually-hidden">Форма для конкурса</h1>
+        <div class="form-main__slogan-wrapper">
+          <p class="form-main__slogan slogan">Конкурс на самое безбашенное путешествие с Пинк</p>
+        </div>
+        <p class="form-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="form-main__text-add"> Пожалуйста, заполните форму ниже:</span></p>
+        <form class="form__main-form form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form__full-name full-name">
+            <label class="full-name__label">Фамилия:
+              <input class="full-name__input" type="text" name="name" value="Укажите фамилию *" required>
+            </label>
+            <label class="full-name__label">Имя:
+              <input class="full-name__input" type="text" name="surname" value="Введите ваше имя *" required>
+            </label>
+            <label class="full-name__label">Отчество:
+              <input class="full-name__input" type="text" name="patronymic" value="Ну и отчество тоже">
+            </label>
+          </div>
+          <div class="form__checkboxes achievements">
+            <h2 class="achievements__title">Ваши безбашенные достижения в путешествии</h2>
+            <ul class="achievements__list achievements-list">
+              <li class="achievements-list__item checkbox-item achievements-list__item--cell-1">
+                <input type="checkbox" class="checkbox-item__input visually-hidden" name="checkbox-item" id="shark-selfie" value="shark-selfie"  checked>
+                <label class="checkbox-item__label" for="shark-selfie" >Сделал селфи с акулой</label>
+              </li>
+              <li class="achievements-list__item checkbox-item achievements-list__item--cell-2">
+                <input type="checkbox" class="checkbox-item__input visually-hidden" name="checkbox-item" id="sunburn" value="sunburn"  checked>
+                <label class="checkbox-item__label" for="sunburn" >Обгорел на пляже</label>
+              </li>
+              <li class="achievements-list__item checkbox-item achievements-list__item--cell-3">
+                <input type="checkbox" class="checkbox-item__input visually-hidden" name="checkbox-item" id="chuck" value="chuck">
+                <label class="checkbox-item__label" for="chuck" >Видел Чака Норриса</label>
+              </li>
+              <li class="achievements-list__item checkbox-item achievements-list__item--cell-4">
+                <input type="checkbox" class="checkbox-item__input visually-hidden" name="checkbox-item" id="souvenir-buyer" value="souvenir-buyer">
+                <label class="checkbox-item__label" for="souvenir-buyer" >Накупил сувениров</label>
+              </li>
+              <li class="achievements-list__item checkbox-item achievements-list__item--cell-5">
+                <input type="checkbox" class="checkbox-item__input visually-hidden" name="checkbox-item" id="tower" value="tower"  checked>
+                <label class="checkbox-item__label" for="tower" >Удержал башню</label>
+              </li>
+              <li class="achievements-list__item checkbox-item achievements-list__item--cell-6">
+                <input type="checkbox" class="checkbox-item__input visually-hidden" name="checkbox-item" id="hotel-destroyer" value="hotel-destroyer">
+                <label class="checkbox-item__label" for="hotel-destroyer" >Разгромил отель</label>
+              </li>
+            </ul>
+          </div>
+          <div class="form__user-contancts user-contacts">
+            <h2 class="user-contacts__title">Контактная информация</h2>
+            <label class="user-contacts__label">Номер телефона
+              <input class="user-contacts__input" type="tel" name="phone" value="Номер, пожалуйста" required>
+            </label>
+            <label class="user-contacts__label">Адрес почты
+              <input class="user-contacts__input" type="email" name="email" value="Введите почту *" required>
+            </label>
+          </div>
+          <div class="form__radio application-type">
+            <h2 class="application-type__title">С каким приложением путешествовали?</h2>
+            <ul class="application-type__list application-type-list">
+              <li class="application-type-list__item radio-item">
+                <input type="radio" name="app" class="radio-item__input visually-hidden" id="ios" checked>
+                <label for="ios" class="radio-item__ios">Pink для IOS</label>
+              </li>
+              <li class="application-type-list__item radio-item">
+                <input type="radio" name="app" class="radio-item__input visually-hidden" id="android">
+                <label for="android" class="radio-item__android">Pink на Android</label>
+              </li>
+              <li class="application-type-list__item radio-item">
+                <input type="radio" name="app" class="radio-item__input visually-hidden" id="windows">
+                <label for="windows" class="radio-item__windows">Windows Phone</label>
+              </li>
+            </ul>
+          </div>
+          <div class="form__comment comment-area">
+            <h2 class="comment-area__title">Опишите свои эмоции</h2>
+            <textarea class="comment-area__field" name="comment">Можно прям в красках, не стесняясь в выражениях
+            </textarea>
+          </div>
+          <button class="form__submit" type="submit" name="button">Отправить форму</button>
+          <small class="form__footnote"><span class="form__asterisk-cerise">* </span>&mdash; Обязательные <span class="form__footnote-add">для заполнения</span> поля</small>
+        </form>
+        <div class="form-main__modal modal-negative visually-hidden">
+          <p class="modal-negative__text">Что-то пошло не так!</p>
+          <p class="modal-negative__desc">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <div class="modal-negative__button-wrapper">
+            <button class="modal-negative__button" type="button" name="button-negative">Ок</button>
+          </div>
+        </div>
+        <div class="form-main__modal modal-positive visually-hidden">
+          <p class="modal-positive__text">Ваша заявка отправлена</p>
+          <p class="modal-positive__desc">Спасибо за участие, ваша <br class="modal-positive__hyphenation" />заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+          <div class="modal-positive__button-wrapper">
+            <button class="modal-positive__button" type="button" name="button-positive">Закрыть окно</button>
+          </div>
+        </div>
+      </main>
+      <footer class="page-footer">
+        <a class="page-footer__logo footer-logo">
+          <img class="footer-logo__image" src="img/logo-pink-glasses.svg" alt="логотип Pink">
+        </a>
+        <ul class="page-footer__socials socials-list">
+          <li class="socials-list__item socials-icon">
+            <a href="#" class="socials-icon__vkontakte">
+              <img class="footer-logo__image" src="img/vk-icon.svg" alt="логотип Pink">
+            </a>
+          </li>
+          <li class="socials-list__item socials-icon">
+            <a href="#" class="socials-icon__telegram">
+              <img class="footer-logo__image" src="img/telegram-icon.svg" alt="логотип Pink">
+            </a>
+          </li>
+          <li class="socials-list__item socials-icon">
+            <a href="#" class="socials-icon__youtube">
+              <img class="footer-logo__image" src="img/youtube-icon.svg" alt="логотип Pink">
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__academy academy">
+          <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+            <svg class="academy__logo" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#D22856"/>
+            </svg>
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
