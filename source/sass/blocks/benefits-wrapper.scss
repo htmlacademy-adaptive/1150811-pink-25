@@ -1,0 +1,65 @@
+.benefits-wrapper__image-1 {
+  display: none;
+}
+
+.benefits-wrapper__image-2 {
+  display: none;
+}
+
+.benefits-wrapper__image-3 {
+  display: block;
+  text-align: center;
+  width: 320px;
+  height: 277px;
+  padding-top: 10px;
+  background-color: $color-gray;
+}
+
+@media (min-width: $tablet-width) {
+  .benefits-wrapper__image-3 {
+    background-color: inherit;
+    position: absolute;
+    padding: 0px;
+    width: auto;
+    height: auto;
+    top: 3px;
+    left: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .benefits-wrapper__image-1 {
+    display: block;
+    background-color: inherit;
+    position: absolute;
+    padding: 0px;
+    width: auto;
+    height: auto;
+    top: 7px;
+    left: 184px;
+    clip-path: polygon(0 0%, 100% 0, 100% 78.5%, 0 78.5%);
+  }
+
+  .benefits-wrapper__image-2 {
+    display: block;
+    background-color: inherit;
+    position: absolute;
+    padding: 0px;
+    width: auto;
+    height: auto;
+    top: 7px;
+    left: 507px;
+    clip-path: polygon(0 0%, 100% 0, 100% 78.5%, 0 78.5%);
+  }
+
+  .benefits-wrapper__image-3 {
+    background-color: inherit;
+    position: absolute;
+    padding: 0px;
+    width: auto;
+    height: auto;
+    top: 7px;
+    left: 830px;
+    clip-path: polygon(0 0%, 100% 0, 100% 78%, 0 78%);
+  }
+}

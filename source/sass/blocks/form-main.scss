@@ -1,6 +1,7 @@
 .form-main {
   display: flex;
   flex-direction: column;
+  position:relative;
   width: 320px;
   align-items: center;
   margin: 0 auto;
@@ -11,11 +12,15 @@
   width: 320px;
   height: 171px;
   background: url(../img/back-mobile.jpg) no-repeat;
+  text-align: center;
 }
 
 .form-main__slogan {
   display: inline-block;
   width: 228px;
+  padding-top: 28px;
+  font-size: 24px;
+  line-height: 33px;
 }
 
 .form-main__text {
@@ -24,6 +29,12 @@
   line-height: 30px;
   text-align: center;
   width: 280px;
+  margin: 0;
+  padding-top: 44px;
+}
+
+.form-main__text-add {
+  display: none;
 }
 
 .form-main__form {
@@ -34,24 +45,60 @@
   margin: 0 auto;
 }
 
+.form-main__modal {
+  display: flex;
+  position: fixed;
+  z-index: 2;
+  top: 30%;
+  width: 320px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFF;
+  box-shadow: 0px 28px 16px -18px rgba(34, 60, 80, 0.2);
+}
+
 @media (min-width: $tablet-width) {
   .form-main {
     width: 660px;
   }
   .form-main__slogan-wrapper {
     width: 660px;
+    height: 330px;
     background: url(../img/back-tablet.jpg) no-repeat;
   }
   .form-main__slogan {
     display: inline-block;
     width: 620px;
+    font-size: 50px;
+    line-height: 68px;
+    padding-top: 68px;
+    padding-bottom: 200px;
   }
   .form-main__text {
     width: 490px;
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 91px;
   }
+
+  .form-main__text-add {
+    display: inline;
+  }
+
   .form-main__form {
     display: grid;
     width: 660px;
+  }
+  .form-main__modal {
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    top: 30%;
+    width: 460px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF;
+    box-shadow: 0px 28px 16px -18px rgba(34, 60, 80, 0.2);
   }
 }
 
@@ -61,17 +108,39 @@
   }
   .form-main__slogan-wrapper {
     width: 1200px;
+    height: 394px;
     background: url(../img/back-desktop.jpg) no-repeat;
+    z-index: -1;
   }
   .form-main__slogan {
     display: inline-block;
     width: 747px;
+    padding-top: 170px;
   }
   .form-main__text {
     width: 756px;
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 91px;
   }
+
+  .form-main__text-add {
+    display: inline;
+  }
+
   .form-main__form {
     display: grid;
     width: 1200px;
+  }
+  .form-main__modal {
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    top: 30%;
+    width: 780px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF;
+    box-shadow: 0px 28px 16px -18px rgba(34, 60, 80, 0.2);
   }
 }

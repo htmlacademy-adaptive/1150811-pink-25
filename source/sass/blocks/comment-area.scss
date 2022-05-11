@@ -1,13 +1,60 @@
 .comment-area__title {
   font-weight: 300;
   font-size: 14px;
+  line-height: 18px;
   text-align: center;
   text-transform: uppercase;
   color: $color-cerise;
+  padding-top: 27px;
 }
 
 .comment-area__field {
+  width: 255px;
+  height: 182px;
   font-weight: 300;
   font-size: 18px;
+  line-height: 30px;
   text-align: left;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  border: $input-border;
+  border-radius: 3px;
+  margin-top: 4px;
+  padding-top: 13px;
+  padding-left: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .comment-area {
+    position: relative;
+    border: $input-border;
+    border-radius: 3px;
+  }
+  .comment-area__title {
+    position: absolute;
+    width: 260px;
+    top: -20px;
+    padding-top: 0px;
+    background-color: #FFF;
+  }
+  .comment-area__field {
+    width: 474px;
+    height: 174px;
+    margin-top: 45px;
+    margin-bottom: 50px;
+    padding-top: 14px;
+    padding-left: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment-area__field {
+    width: 792px;
+    height: 108px;
+    margin-top: 42px;
+    margin-bottom: 44px;
+    padding-top: 14px;
+    padding-left: 20px;
+  }
 }

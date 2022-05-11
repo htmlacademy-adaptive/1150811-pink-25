@@ -1,9 +1,21 @@
 .map {
+  display: block;
+  position: relative;
   background-image: url("../img/map-mobile.png");
   background-repeat: no-repeat;
   background-color: #E5E5E5;
   width: 320px;
   height: 200px;
+}
+
+.map__triangle {
+  position: absolute;
+  top: -27px;
+}
+.map__marker {
+  position: absolute;
+  top: 47%;
+  left: 45%;
 }
 
 @media (min-width: $tablet-width) {
@@ -12,6 +24,15 @@
     width: 660px;
     height: 374px;
   }
+  .map__triangle {
+    position: absolute;
+    top: -56px;
+  }
+  .map__marker {
+    position: absolute;
+    top: 52%;
+    left: 47%;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -19,5 +40,14 @@
     background-image: url("../img/map-desktop.png");
     width: 1200px;
     height: 502px;
+  }
+  .map__triangle {
+    position: absolute;
+    top: -20px;
+  }
+  .map__marker {
+    position: absolute;
+    top: 52.5%;
+    left: 48.5%;
   }
 }

@@ -1,0 +1,111 @@
+
+.modal-positive__text {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 24px;
+  padding-top: 20px;
+}
+
+.modal-positive__desc {
+  display: inline-block;
+  color: $color-midnight;
+  line-height: 24px;
+  width: 250px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.modal-positive__hyphenation {
+  display: none;
+}
+
+.modal-positive__button-wrapper {
+  width: 320px;
+  background-color: #F2F2F2;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.modal-positive__button {
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 61px;
+  text-align: center;
+  text-transform: uppercase;
+  color:#FFF;
+  background-color: #2AAB6D;
+  width: 280px;
+  border: none;
+  border-radius: 3px;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-positive {
+    height: 450px;
+  }
+  .modal-positive__text {
+    display: inline-block;
+    width: 240px;
+    text-align: center;
+    font-weight: 400px;
+    font-size: 30px;
+    line-height: 40px;
+    padding-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .modal-positive__desc {
+    display: inline-block;
+    color: $color-midnight;
+    font-size: 18px;
+    line-height: 24px;
+    width: 310px;
+    text-align: center;
+  }
+  .modal-positive__hyphenation {
+    display: inline;
+  }
+  .modal-positive__button-wrapper {
+    width: 460px;
+    background-color: #F2F2F2;
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal-positive {
+    height: 386px;
+  }
+  .modal-positive__text {
+    display: inline-block;
+    width: 400px;
+    text-align: center;
+    font-weight: 400px;
+    font-size: 30px;
+    line-height: 40px;
+    padding-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .modal-positive__desc {
+    display: inline-block;
+    color: $color-midnight;
+    font-size: 18px;
+    line-height: 24px;
+    width: 378px;
+    text-align: center;
+  }
+  .modal-positive__hyphenation {
+    display: none;
+  }
+  .modal-positive__button-wrapper {
+    width: 780px;
+    background-color: #F2F2F2;
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+}

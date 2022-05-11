@@ -11,9 +11,9 @@
         <div class="page-header__wrapper">
           <a class="page-header__logo logo">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/logo-stars-desktop.svg" width="147" height="40">
-              <source media="(min-width: 660px)" srcset="img/logo-white-tablet.svg" width="145" height="40">
-              <img class="logo__image" src="img/logo-white-mobile.svg" alt="логотип Pink" width="74" height="23">
+              <source media="(min-width: 1200px)" srcset="img/logo-stars-desktop.svg" width="147">
+              <source media="(min-width: 660px)" srcset="img/logo-white-tablet.svg" width="145">
+              <img class="logo__image" src="img/logo-white-mobile.svg" alt="логотип Pink" width="74">
             </picture>
           </a>
           <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть и закрыть меню</span></button>
@@ -21,7 +21,7 @@
         <nav class="page-header__main-nav main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="#">Главная</a>
+              <a class="site-list__link" href="#">Главная</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="catalog.html">Фотографии</a>
@@ -69,40 +69,56 @@
           <p class="slogan-box__content slogan slogan--color-midnight">Устали от серости мегаполиса?</p>
           <p class="slogan-box__content slogan slogan--color-midnight">Нам есть, что вам <br />предложить!</p>
         </div>
-        <section class="page-main__benefits benefits">
-          <h2 class="benefits__heading visually-hidden">Преимущества</h2>
-          <div class="benefits__content benefit">
-            <h3 class="benefit__title">Поднимает настроение</h3>
-            <p class="benefit__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </div>
-          <div class="benefits__content benefit">
-            <h3 class="benefit__title">Меняет мир вокруг</h3>
-            <p class="benefit__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </div>
-          <div class="benefits__content benefit">
-            <h3 class="benefit__title">Заводит новых друзей</h3>
-            <p class="benefit__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </div>
-          <picture class="benefits__image">
+        <div class="page-main__benefits-wrapper benefits-wrapper">
+          <section class="page-main__benefits benefits">
+            <h2 class="benefits__heading visually-hidden">Преимущества</h2>
+            <div class="benefits__container">
+              <div class="benefits__content benefit">
+                <h3 class="benefit__title">Поднимает настроение</h3>
+                <p class="benefit__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </div>
+              <div class="benefits__content benefit">
+                <h3 class="benefit__title">Меняет мир вокруг</h3>
+                <p class="benefit__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы <br />усилить эффект</p>
+              </div>
+              <div class="benefits__content benefit">
+                <h3 class="benefit__title">Заводит новых друзей</h3>
+                <p class="benefit__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </div>
+            </div>
+          </section>
+          <img class="benefits-wrapper__image-1" src="img/smartphone-monochrome-desktop.png" alt="Смартфон"/>
+          <img class="benefits-wrapper__image-2" src="img/smartphone-pink-desktop.png" alt="Смартфон"/>
+          <picture class="benefits-wrapper__image-3">
+            <source media="(min-width: 1200px)" srcset="img/smartphone-smile-desktop.png">
             <source media="(min-width: 660px)" srcset="img/smartphone-smile-tablet.png">
             <img src="img/smartphone-smile.png" alt="Смартфон"/>
           </picture>
-          <div class="benefits__extra extra">
-            <img class="extra__image" src="img/timer.svg" alt="Таймер">
-            <h3 class="extra__title">Эффект на 24 часа!</h3>
-            <p class="extra__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-            <a class="extra__link">Узнать больше об исследовании</a>
-          </div>
-        </section>
+        </div>
+        <div class="page-main__extra extra">
+          <picture class="extra__image">
+            <source media="(min-width: 1200px)" srcset="img/timer.svg" width="298" height="345" />
+            <img src="img/timer.svg" alt="Таймер" width="238" height="276">
+          </picture>
+          <h3 class="extra__title">Эффект <br />на 24 часа!</h3>
+          <p class="extra__text">Британские ученые провели исследования и доказали,
+            <br class="extra__text-hyphenation-1" /> что положительный эффект
+            <br class="extra__text-hyphenation-2" /> от использования
+             приложения длится целые сутки!</p>
+          <a class="extra__link">Узнать больше об исследовании</a>
+        </div>
         <section class="page-main__comments comments">
+          <div class="comments__toggle-left"></div>
           <div class="comments__content comment">
+            <img class="comment__image" src="img/quotes.svg" alt="Кавычки" width="79" height="63">
             <h3 class="comment__title">Николай Петров</h3>
             <p class="comment__desc">25 лет, водитель трамвая</p>
             <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </div>
+          <div class="comments__toggle-right"></div>
           <div class="comments__buttons carousel-buttons">
+            <button class="carousel-buttons__button carousel-buttons__button--active" type="button" name="carousel"></button>
             <button class="carousel-buttons__button" type="button" name="carousel"></button>
-            <button class="carousel-button__button" type="button" name="carousel"></button>
             <button class="carousel-buttons__button" type="button" name="carousel"></button>
           </div>
         </section>
@@ -119,64 +135,73 @@
               <li class="features__item" >
                 <p class="features__item-name">Смайлики</p>
               </li>
-              <li class="features__item" >
+              <li class="features__item features__item--left-border-radius">
                 <p class="features__item-name">Комментарии</p>
               </li>
             </ul>
             <ul class="tariffes__list">
-              <li class="tariffes__tariff">
+              <li class="tariffes__tariff tariffes__tariff--left-border-radius">
                 <p class="tariffes__name">База</p>
                 <p class="tariffes__value">1,99 USD</p>
               </li>
               <li class="tariffes__tag">
+                <p class="tarrifes__feature">Розовый фильтр</p>
                 <div class="tariffes__tag-yes"></div>
               </li>
               <li class="tariffes__tag">
+                <p class="tarrifes__feature">Смайлики</p>
                 <div class="tariffes__tag-no"></div>
               </li>
               <li class="tariffes__tag">
+                <p class="tarrifes__feature">Комментарии</p>
                 <div class="tariffes__tag-no"></div>
               </li>
             </ul>
-            <ul class="tariffes__list tariffes__list--mobile-visible">
+            <ul class="tariffes__list">
               <li class="tariffes__tariff">
-                <div class="tariffes__ribbon hit-ribbon visually-hidden">
+                <div class="tariffes__ribbon hit-ribbon">
                   <p class="hit-ribbon__text">Хит</p>
                 </div>
                 <p class="tariffes__name">Стандарт</p>
                 <p class="tariffes__value">3,99 USD</p>
               </li>
               <li class="tariffes__tag">
+                <p class="tarrifes__feature">Розовый фильтр</p>
                 <div class="tariffes__tag-yes"></div>
               </li>
               <li class="tariffes__tag">
+                <p class="tarrifes__feature">Смайлики</p>
                 <div class="tariffes__tag-yes"></div>
               </li>
               <li class="tariffes__tag">
+                <p class="tarrifes__feature">Комментарии</p>
                 <div class="tariffes__tag-no"></div>
               </li>
             </ul>
 
-            <ul class="tariffes__list">
-              <li class="tariffes__tariff">
+            <ul class="tariffes__list tariffes__list--last-list">
+              <li class="tariffes__tariff tariffes__tariff--right-border-radius">
                 <p class="tariffes__name">Анлим</p>
                 <p class="tariffes__value">9,99 USD</p>
               </li>
               <li class="tariffes__tag">
+                <p class="tarrifes__feature">Розовый фильтр</p>
                 <div class="tariffes__tag-yes"></div>
               </li>
               <li class="tariffes__tag">
+                <p class="tarrifes__feature">Смайлики</p>
                 <div class="tariffes__tag-yes"></div>
               </li>
-              <li class="tariffes__tag">
+              <li class="tariffes__tag tariffes__tag--right-border-radius">
+                <p class="tarrifes__feature">Комментарии</p>
                 <div class="tariffes__tag-yes"></div>
               </li>
             </ul>
           </div>
           <div class="tariffes__buttons carousel-buttons">
             <button class="carousel-buttons__button" type="button" name="carousel"></button>
-            <button class="carousel-button__button" type="button" name="carousel"></button>
-            <button class="carousel-button__button" type="button" name="carousel"></button>
+            <button class="carousel-buttons__button carousel-buttons__button--active" type="button" name="carousel"></button>
+            <button class="carousel-buttons__button" type="button" name="carousel"></button>
           </div>
         </section>
         <section class="page-main__contacts contacts">
@@ -191,13 +216,18 @@
               <dt class="contact__text">Пишите:</dt>
                 <dd class="contact__mail">mail@htmlacademy.ru</dd>
             </div>
-            <div class="contacts-list__item contact">
+            <div class="contacts-list__item contact contacts-list__item--last-list">
               <dt class="contact__text">Приезжайте в гости:</dt>
                 <dd class="contact__address">ул. Большая Конюшенная, 19/8</dd>
             </div>
           </dl>
         </section>
         <div class="page-main__map map">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/triangle-footer-desktop.svg" width="1200">
+            <source media="(min-width: 660px)" srcset="img/triangle-footer.svg" width="660">
+            <img class="map__triangle" src="img/triangle-footer.svg" alt="белый треугольник" width="320">
+          </picture>
           <h2 class="visually-hidden">htmlacademy на карте</h2>
           <img class="map__marker" src="img/map-marker.png" alt="Указатель на карте">
         </div>
@@ -225,7 +255,8 @@
         </ul>
         <div class="page-footer__academy academy">
           <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
-            <svg>
+            <svg class="academy__logo" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#D22856"/>
             </svg>
           </a>
         </div>

@@ -1,7 +1,15 @@
+.panorama__text-wrapper {
+  display: block;
+  position: absolute;
+  right: 20px;
+  width: 140px;
+  background-color: $color-cerise;
+}
+
 .panorama__text {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 24px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
   text-align: center;
   text-transform: uppercase;
   color: #FFF;
@@ -15,27 +23,38 @@
 
 .panorama__desc {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   width: 280px;
 }
 
 @media (min-width: $tablet-width) {
+  .panorama__text-wrapper {
+    top: 57px;
+  }
   .panorama__image {
     width: 660px;
     height: 509px;
   }
   .panorama__desc {
     display: grid;
+    grid-template-columns: 310px 310px;
     width: 620px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .panorama__text-wrapper {
+    top: 54px;
+    right: 130px;
+  }
   .panorama__image {
     width: 1200px;
     height: 506px;
   }
   .panorama__desc {
     display: grid;
+    grid-template-columns: 470px 470px;
     width: 940px;
   }
 }

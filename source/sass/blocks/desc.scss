@@ -1,3 +1,136 @@
 .desc {
-  background-color: #F2F2F2;
+  background-color: $color-gray;
+  padding-top: 18px;
+  padding-bottom: 15px;
+  margin: 0;
+}
+
+.desc__username {
+  display: inline-block;
+  width: 253px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+  color: $color-midnight;
+  margin: 0;
+  padding-left: 17px;
+}
+
+.desc__comment-time {
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $color-midnight;
+  margin: 0;
+}
+
+.desc__text {
+  display: inline-block;
+  width: 253px;
+  @include regular-text;
+  line-height: 24px;
+  text-align: left;
+  margin: 0;
+  padding-left: 17px;
+}
+
+.desc__like-icon {
+  display: inline-block;
+  width: 13px;
+  height: 12px;
+  padding-left: 17px;
+  padding-top: 6px;
+}
+
+.desc__like-text {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-cerise;
+  margin: 0;
+  padding-left: 19px;
+  padding-top: 8px;
+}
+
+@media (min-width: $tablet-width) {
+  .desc {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .desc__username {
+    display: inline-block;
+    align-self: end;
+    width: 253px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    color: $color-midnight;
+    margin: 0;
+    padding-left: 30px;
+  }
+
+  .desc__comment-time {
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $color-midnight;
+    margin: 0;
+  }
+
+  .desc__text {
+    display: inline-block;
+    align-self: start;
+    width: 253px;
+    @include regular-text;
+    line-height: 24px;
+    text-align: left;
+    margin: 0;
+    padding-left: 30px;
+  }
+  .desc__like-wrapper {
+    align-self: start;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: row-reverse;
+    width: 240px;
+    padding-left: 30px;
+  }
+  .desc__like-icon {
+    display: inline-block;
+    width: 13px;
+    height: 12px;
+    padding-left: 0;
+    padding-top: 0;
+  }
+
+  .desc__like-text {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-cerise;
+    margin: 0;
+    padding-left: 0;
+    padding-top: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .desc__username {
+    padding-left: 28px;
+  }
+  .desc__text {
+    padding-left: 28px;
+  }
+  .desc__like-wrapper {
+    padding-left: 28px;
+  }
 }

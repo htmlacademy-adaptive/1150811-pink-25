@@ -1,6 +1,17 @@
 .academy__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 128px;
   font-weight: 300;
   font-size: 14px;
-  line-height: 18px;
-  color: #000;
+  line-height: 34px;
+  color: $color-midnight;
+}
+
+@media (min-width: $desktop-width) {
+  .academy__link {
+    font-size: 18px;
+    width: 153px;
+  }
 }

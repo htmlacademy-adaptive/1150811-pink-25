@@ -1,0 +1,122 @@
+.modal-negative {
+  height: 290px;
+}
+
+.modal-negative__text {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 24px;
+  padding-top: 10px;
+}
+
+.modal-negative__desc {
+  display: inline-block;
+  color: $color-midnight;
+  line-height: 24px;
+  width: 280px;
+  text-align: center;
+}
+
+.modal-negative__button {
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 61px;
+  text-align: center;
+  text-transform: uppercase;
+  color:#FFF;
+  background-color: #2AAB6D;
+  width: 280px;
+  border: none;
+  border-radius: 3px;
+  margin-top: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-negative {
+    height: 363px;
+  }
+
+  .modal-negative__text {
+    display: inline-block;
+    width: 240px;
+    text-align: center;
+    font-weight: 400px;
+    font-size: 30px;
+    line-height: 40px;
+    padding-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .modal-negative__desc {
+    display: inline-block;
+    color: $color-midnight;
+    font-size: 18px;
+    line-height: 24px;
+    width: 320px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal-negative {
+    height: 363px;
+  }
+
+  .modal-negative__text {
+    display: inline-block;
+    width: 240px;
+    text-align: center;
+    font-weight: 400px;
+    font-size: 30px;
+    line-height: 40px;
+    padding-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .modal-negative__desc {
+    display: inline-block;
+    color: $color-midnight;
+    font-size: 18px;
+    line-height: 24px;
+    width: 320px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal-negative {
+    height: 386px;
+  }
+  .modal-negative__text {
+    display: inline-block;
+    width: 330px;
+    text-align: center;
+    font-weight: 400px;
+    font-size: 30px;
+    line-height: 40px;
+    padding-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .modal-negative__desc {
+    display: inline-block;
+    color: $color-midnight;
+    font-size: 18px;
+    line-height: 24px;
+    width: 351px;
+    text-align: center;
+  }
+
+  .modal-negative__button-wrapper {
+    width: 780px;
+    background-color: #F2F2F2;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    margin-top: 39px;
+  }
+  .modal-negative__button {
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+}

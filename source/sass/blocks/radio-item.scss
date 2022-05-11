@@ -1,5 +1,66 @@
 .radio-item {
   @include regular-text;
+  position: relative;
+  font-size: 18px;
   line-height: 30px;
   text-align: left;
+  margin-bottom: 45px;
+}
+
+.radio-item__ios,
+.radio-item__android,
+.radio-item__windows {
+  padding-left: 70px;
+}
+
+.radio-item__input + label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  vertical-align: middle;
+  width: 37px;
+  height: 37px;
+  border: $input-border;
+  border-radius: 50%;
+  background-color: #FFF;
+}
+
+.radio-item__input:checked + label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 37px;
+  height: 37px;
+  border: $input-border;
+  border-radius: 50%;
+  background: url(../img/ellipse-small.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px 15px;
+  background-color: #FFF;
+}
+
+.radio-item__input + label:hover::before {
+  border: 1px solid #bcbcbc;
+}
+
+.radio-item__input:checked + label:hover::before {
+  border: 1px solid #bcbcbc;
+}
+
+.radio-item__input:checked + label:active::before {
+  border: 1px solid #bcbcbc;
+  opacity: 0.5;
+}
+
+@media (min-width: $tablet-width) {
+  .radio-item__ios,
+  .radio-item__android,
+  .radio-item__windows {
+    padding-left: 61px;
+  }
 }

@@ -1,8 +1,7 @@
-.contacts {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 280px;
+.contacts__list {
+  margin: 0;
+  padding-top: 35px;
+  padding-bottom: 17px;
 }
 
 .contacts-list__item {
@@ -15,17 +14,34 @@
 .contacts__slogan {
   display: inline-block;
   margin: 0;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
 @media (min-width: $tablet-width) {
   .contacts__slogan {
     width: 370px;
+    padding-top: 45px;
+  }
+  .contacts__list {
+    display: grid;
+    grid-template-columns: 330px 330px;
+    justify-items: center;
+    width: 660px;
+    padding-top: 32px;
+    padding-bottom: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts__slogan {
     width: 462px;
+    padding-top: 60px;
+  }
+  .contacts__list {
+    display: grid;
+    grid-template-columns: 320px 320px 320px;
+    justify-items: center;
+    width: 960px;
+    padding-top: 38px;
   }
 }

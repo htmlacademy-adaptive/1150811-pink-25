@@ -1,3 +1,15 @@
-.application-type {
-  background-color: #E5E5E5;
+.application-type-list {
+  padding-top: 28px;
+}
+
+@media (min-width: $tablet-width) {
+  .application-type-list {
+    padding-top: 57px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .application-type-list {
+    padding-top: 59px;
+  }
 }
