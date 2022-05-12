@@ -32,12 +32,10 @@
   height: 55px;
   border: 3px solid $color-cerise;
   border-radius: 30px;
-  font-weight: 400;
-  font-size: 18px;
   line-height: 18px;
   text-align: center;
-  color: $color-cerise;
   margin-top: 38px;
+  @include regular-text(18px, 18px, 400, $color-cerise);
 }
 
 .adjustment-section__cancel {
@@ -93,11 +91,7 @@
     border: 3px solid $color-cerise;
     border-radius: 30px;
     background-color: inherit;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 18px;
     text-align: center;
-    color: $color-cerise;
     margin-top: 0;
   }
 
@@ -157,11 +151,7 @@
     border: 3px solid $color-cerise;
     border-radius: 30px;
     background-color: inherit;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 18px;
     text-align: center;
-    color: $color-cerise;
     margin-top: 0;
   }
 

@@ -33,14 +33,14 @@
 }
 
 @media (min-width: $tablet-width) {
- .page-header {
-   width: 660px;
- }
- .page-header__wrapper {
-   width: 660px;
-   padding-top: 10px;
-   padding-bottom: 10px;
- }
+  .page-header {
+    width: 660px;
+  }
+  .page-header__wrapper {
+    width: 660px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 @media (min-width: $desktop-width) {

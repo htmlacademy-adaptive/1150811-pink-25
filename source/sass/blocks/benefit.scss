@@ -8,7 +8,7 @@
 }
 
 .benefit__text {
-    br {
+    .benefit__text--hyphenation {
       display: none;
     }
   @include regular-text;
@@ -19,7 +19,7 @@
 
 @media (min-width: $tablet-width) {
   .benefit__text {
-      br {
+      .benefit__text--hyphenation {
         display: inline-block;
       }
     display: inline-block;
@@ -33,14 +33,14 @@
   .benefit__title {
     display: inline-block;
     width: 240px;
-    font-weight:700px;
+    font-weight:400px;
     font-size: 30px;
     line-height: 30px;
     padding-top: 56px;
     padding-bottom: 22px;
   }
   .benefit__text {
-      br {
+      .benefit__text--hyphenation {
         display: none;;
       }
     display: inline-block;

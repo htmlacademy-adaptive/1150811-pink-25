@@ -5,13 +5,10 @@
 .achievements__title {
   display: inline-block;
   width: 218px;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 18px;
+  padding-top: 27px;
+  @include regular-text(14px, 18px, 300, $color-cerise);
   text-align: center;
   text-transform: uppercase;
-  color: $color-cerise;
-  padding-top: 27px;
 }
 
 .achievements__list {

@@ -1,19 +1,13 @@
 .comment-area__title {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 18px;
+  padding-top: 27px;
+  @include regular-text(14px, 18px, 300, $color-cerise);
   text-align: center;
   text-transform: uppercase;
-  color: $color-cerise;
-  padding-top: 27px;
 }
 
 .comment-area__field {
   width: 255px;
   height: 182px;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 30px;
   text-align: left;
   outline: none;
   resize: none;
@@ -23,6 +17,7 @@
   margin-top: 4px;
   padding-top: 13px;
   padding-left: 21px;
+  @include regular-text(18px, 30px, 300, #000);
 }
 
 @media (min-width: $tablet-width) {

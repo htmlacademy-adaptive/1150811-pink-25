@@ -7,12 +7,9 @@
 }
 
 .panorama__text {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFF;
+  @include regular-text(12px, 22px, 400, #FFF);
 }
 
 .panorama__image {

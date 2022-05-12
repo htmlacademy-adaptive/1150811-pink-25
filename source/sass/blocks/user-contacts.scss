@@ -6,26 +6,20 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 30px;
   text-transform: uppercase;
-  color: $color-cerise;
   padding-bottom: 16px;
   padding-left: 24px;
+  @include regular-text(14px, 30px, $color: $color-cerise);
 }
 
 .user-contacts__input {
   @include form-input;
   width: 253px;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 30px;
   text-align: left;
-  color: $color-midnight;
   margin-top: 5px;
   margin-left: -23px;
   padding-left: 21px;
+  @include regular-text(18px, 30px);
 }
 
 @media (min-width: $tablet-width) {
@@ -45,12 +39,9 @@
     z-index: 1;
     top: -20px;
     background-color: #FFF;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 18px;
     text-align: center;
     text-transform: uppercase;
-    color: $color-cerise;
+    @include regular-text(14px, 18px, $color: $color-cerise);
   }
 
   .user-contacts__label {
@@ -58,24 +49,16 @@
     flex-direction: column-reverse;
     align-items: flex-start;
     width: 474px;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 48px;
     text-transform: uppercase;
-    color: $color-cerise;
     padding-bottom: 15px;
     padding-left: 12px;
-
+    @include regular-text(14px, 48px, $color: $color-cerise);
   }
 
   .user-contacts__input {
     @include form-input;
     width: inherit;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
     text-align: left;
-    color: $color-midnight;
     margin-top: 5px;
     margin-left: -19px;
     padding-left: 20px;
@@ -104,24 +87,18 @@
     justify-self: end;
     margin-left: 0;
     width: 350px;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 48px;
     text-transform: uppercase;
-    color: $color-cerise;
     padding-bottom: 4px;
+    @include regular-text(14px, 30px, $color: $color-cerise);
   }
 
   .user-contacts__input {
     @include form-input;
     width: inherit;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
     text-align: left;
-    color: $color-midnight;
     margin-top: 5px;
     margin-left: -19px;
     padding-left: 20px;
+
   }
 }

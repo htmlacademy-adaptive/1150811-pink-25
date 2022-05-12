@@ -15,21 +15,19 @@
   line-height: 24px;
   width: 280px;
   text-align: center;
+  @include regular-text(14px, 24px);
 }
 
 .modal-negative__button {
   display: block;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 61px;
   text-align: center;
   text-transform: uppercase;
-  color:#FFF;
   background-color: #2AAB6D;
   width: 280px;
   border: none;
   border-radius: 3px;
   margin-top: 25px;
+  @include regular-text(18px, 61px, 400, #FFF)
 }
 
 @media (min-width: $tablet-width) {
@@ -50,11 +48,9 @@
 
   .modal-negative__desc {
     display: inline-block;
-    color: $color-midnight;
-    font-size: 18px;
-    line-height: 24px;
     width: 320px;
     text-align: center;
+    @include regular-text(18px, 24px);
   }
 }
 
@@ -81,6 +77,7 @@
     line-height: 24px;
     width: 320px;
     text-align: center;
+    @include regular-text(18px, 24px);
   }
 }
 
@@ -101,9 +98,6 @@
 
   .modal-negative__desc {
     display: inline-block;
-    color: $color-midnight;
-    font-size: 18px;
-    line-height: 24px;
     width: 351px;
     text-align: center;
   }

@@ -1,33 +1,23 @@
 .hit-ribbon__text {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 24px;
   text-align: center;
   text-transform: uppercase;
   color: #FFF;
+  @include regular-text(14px, 24px, #FFF);
   margin: 0;
 }
 
 @media (min-width: $tablet-width) {
   .hit-ribbon__text {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 20px;
     text-align: center;
     text-transform: uppercase;
-    color: #FFF;
-    margin: 0;
+    @include regular-text(14px, 20px, #FFF);
   }
 }
 
 @media (min-width: $desktop-width) {
   .hit-ribbon__text {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 24px;
     text-align: center;
     text-transform: uppercase;
-    color: #FFF;
-    margin: 0;
+    @include regular-text(14px, 24px, #FFF);
   }
 }

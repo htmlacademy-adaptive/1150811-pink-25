@@ -20,15 +20,14 @@
     padding-top: 95px;
   }
   .extra__text {
-    .extra__text-hyphenation-1 {
+    .extra__text-hyphenation--line-1 {
       display: none;
     }
     display: inline-block;
     width: 308px;
-    @include regular-text;
-    line-height: 24px;
     margin: 0;
     padding-top: 18px;
+    @include regular-text(14px, 24px);
   }
   .extra__link {
     display: inline-block;
@@ -37,8 +36,8 @@
     font-size: 14px;
     line-height: 24px;
     text-decoration: underline;
-    color: $color-cerise;
     margin: 0;
+    @include regular-text(14px, 24px, $color: $color-cerise);
   }
 }
 
@@ -56,40 +55,33 @@
     text-align: center;
   }
   .extra__title {
-    br {
-     display: none;
-   }
+    .extra__title-hyphenation {
+      display: none;
+    }
     display: inline-block;
     width: 298px;
     line-height: 30px;
     padding-top: 163px;
   }
 
-
-
   .extra__text {
-    .extra__text-hyphenation-1 {
+    .extra__text-hyphenation--line-1 {
       display: inline-block;
     }
-    .extra__text-hyphenation-2 {
+    .extra__text-hyphenation--line-2 {
       display: none;
     }
     display: inline-block;
     width: 534px;
-    @include regular-text;
-    font-size: 18px;
-    line-height: 30px;
     margin: 0;
     padding-top: 23px;
+    @include regular-text(18px, 30px);
   }
   .extra__link {
     display: inline-block;
     width: 290px;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30x;
     text-decoration: underline;
-    color: $color-cerise;
     margin: 0;
+    @include regular-text(18px, 30px);
   }
 }

@@ -31,13 +31,10 @@
 .intro__text {
   display: inline-block;
   width: 230px;
-  font-weight: 200;
-  font-size: 14px;
-  line-height: 24px;
   text-align: center;
-  color: #FFF;
   padding-top: 4px;
   padding-bottom: 18px;
+  @include regular-text(14px, 24px, 200, #FFF);
 }
 
 @media (min-width: $tablet-width) {
@@ -71,15 +68,12 @@
   }
   .intro__text {
     width: 300px;
-    font-weight: 200;
-    font-size: 18px;
-    line-height: 24px;
     text-align: center;
-    color: #FFF;
     padding-top: 11px;
     padding-bottom: 96px;
     padding-left: 20px;
     z-index: 1;
+    @include regular-text(18px, 24px, 200, #FFF);
   }
 }
 
@@ -109,11 +103,7 @@
   }
   .intro__text {
     width: 300px;
-    font-weight: 200;
-    font-size: 18px;
-    line-height: 24px;
     text-align: center;
-    color: #FFF;
     padding-top: 50px;
     padding-bottom: 125px;
     padding-left: 130px;

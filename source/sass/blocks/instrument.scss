@@ -4,67 +4,57 @@
   padding-bottom: 75px;
 }
 
-.instrument__crop-button {
+.instrument__button {
   display: block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  overflow: hidden;
+  background-color: inherit;
+}
+
+.instrument__button--crop {
   width: 44px;
   height: 44px;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  overflow: hidden;
-  background-color: inherit;
 }
 
-.instrument__fill-button {
-  display: block;
+.instrument__button--fill {
   width: 43px;
   height: 43px;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  overflow: hidden;
-  background-color: inherit;
 }
 
-.instrument__contrast-button {
-  display: block;
+.instrument__button--contrast {
   width: 32px;
   height: 32px;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  overflow: hidden;
-  background-color: inherit;
 }
 
-.instrument__scale-1 {
+.instrument__scale {
   display: block;
   position: absolute;
+  background-color: $color-midnight;
+}
+
+.instrument__scale--crop {
   top: 83px;
   left: -17px;
   width: 240px;
   height: 2px;
-  background-color: $color-midnight;
 }
 
-.instrument__scale-2 {
+.instrument__scale--fill {
   display: none;
-  position: absolute;
   top: 83px;
   left: -100px;
   width: 240px;
   height: 2px;
-  background-color: $color-midnight;
 }
 
-.instrument__scale-3 {
+.instrument__scale--contrast {
   display: none;
-  position: absolute;
   top: 77px;
   right: -29px;
   width: 240px;
   height: 2px;
-  background-color: $color-midnight;
 }
 
 .instrument__switch {
@@ -91,20 +81,17 @@
     padding-left: 0;
     padding-bottom: 0;
   }
-  .instrument__crop-button {
-    display: block;
+  .instrument__button--crop {
     width: 22px;
     height: 22px;
   }
 
-  .instrument__fill-button {
-    display: block;
+  .instrument__button--fill {
     width: 24px;
     height: 26px;
   }
 
-  .instrument__contrast-button {
-    display: block;
+  .instrument__button--contrast {
     width: 20px;
     height: 22px;
   }
@@ -138,9 +125,9 @@
     opacity: 1;
   }
 
-  .instrument__scale-1,
-  .instrument__scale-2,
-  .instrument__scale-3   {
+  .instrument__scale--crop,
+  .instrument__scale--fill,
+  .instrument__scale--contrast   {
     display: block;
     position: sticky;
     position: -webkit-sticky;
@@ -166,45 +153,39 @@
     border-bottom: transparent;
   }
 
-  .instrument__crop-button {
-    display: block;
+  .instrument__button--crop {
     width: 44px;
     height: 44px;
   }
 
-  .instrument__fill-button {
-    display: block;
+  .instrument__button--fill {
     width: 46px;
     height: 44px;
   }
 
-  .instrument__contrast-button {
-    display: block;
+  .instrument__button--contrast {
     width: 42px;
     height: 32px;
   }
   .instrument__crop-icon {
-    display: block;
     width: 44px;
     height: 44px;
   }
 
   .instrument__fill-icon {
-    display: block;
     width: 48px;
     height: 43px;
   }
 
   .instrument__contrast-icon {
-    display: block;
     width: 32px;
     height: 32px;
     padding-left: 5px;
   }
 
-  .instrument__scale-1,
-  .instrument__scale-2,
-  .instrument__scale-3   {
+  .instrument__scale--crop,
+  .instrument__scale--fill,
+  .instrument__scale--contrast   {
     display: block;
     position: sticky;
     position: -webkit-sticky;
