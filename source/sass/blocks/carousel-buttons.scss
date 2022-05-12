@@ -1,3 +1,19 @@
-.carousel-buttons {
+.carousel-buttons__button {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  padding: 0;
+  border: 3px solid #FFF;
+  background: #283645;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.carousel-buttons__button--active {
+  width: 12px;
+  height: 12px;
+  border: 3px solid #283645;
   background-color: #FFF;
+  opacity: 1;
 }

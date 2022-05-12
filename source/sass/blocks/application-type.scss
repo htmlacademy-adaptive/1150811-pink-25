@@ -1,8 +1,56 @@
+.application-type {
+  background-color: $color-gray;
+}
+
 .application-type__title {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 18px;
+  display: inline-block;
+  width: 178px;
   text-align: center;
   text-transform: uppercase;
-  color: $color-cerise;
+  padding-top: 26px;
+  @include regular-text(14px, 18px, 300, $color-cerise);
+}
+
+.application-type__list {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .application-type {
+    position: relative;
+    background-color: transparent;
+    padding-bottom: 12px;
+    border: $input-border;
+    border-radius: 3px;
+  }
+  .application-type__title {
+    position: absolute;
+    top: -20px;
+    z-index: 1;
+    background-color: #FFF;
+    width: 368px;
+    padding-top: 0px;
+  }
+  .application-type__list {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .application-type {
+    position: relative;
+    background-color: transparent;
+    padding-bottom: 14px;
+    border: $input-border;
+    border-radius: 3px;
+  }
+  .application-type__list {
+    display: flex;
+    flex-direction: column;
+    width: 288px;
+  }
 }

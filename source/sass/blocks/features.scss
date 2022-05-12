@@ -3,10 +3,11 @@
 }
 
 .features__item-name {
-  @include regular-text;
-  line-height: 30px;
   text-align: left;
-  text-transform: uppercase;
+  padding-left: 14px;
+  padding-top: 8px;
+  margin: 0;
+  @include regular-text(14px, 30px);
 }
 
 .features__item {
@@ -15,12 +16,49 @@
 
 @media (min-width: $tablet-width) {
   .features {
-    display: grid;
-    width: 152px;
+    display: flex;
+    flex-direction: column;
+    width: 154px;
+    min-height: 45px;
   }
   .features__gap {
     display: block;
     width: 152px;
-    height: 75px;
+    min-height: 77px;
+    border-bottom: 2px solid #E5E5E5;
+  }
+  .features__item {
+    display: block;
+    width: 152px;
+    min-height: 45px;
+    border-left: 2px solid #E5E5E5;
+    border-right: 2px solid #E5E5E5;
+    border-bottom: 2px solid #E5E5E5;
+  }
+  .features__item--left-border-radius {
+    border-radius: 0 0 0 3px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features {
+    width: 235px;
+    min-height: 59px;
+  }
+  .features__gap {
+    width: 233px;
+    min-height: 96px;
+  }
+  .features__item {
+    display: block;
+    width: 233px;
+    min-height: 59px;
+  }
+  .features__item-name {
+    text-align: left;
+    padding-left: 21px;
+    padding-top: 14px;
+    margin: 0;
+    @include regular-text(18px, 30px);
   }
 }

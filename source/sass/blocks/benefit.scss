@@ -8,6 +8,9 @@
 }
 
 .benefit__text {
+    .benefit__text--hyphenation {
+      display: none;
+    }
   @include regular-text;
   line-height: 24px;
   text-align: center;
@@ -16,9 +19,35 @@
 
 @media (min-width: $tablet-width) {
   .benefit__text {
+      .benefit__text--hyphenation {
+        display: inline-block;
+      }
     display: inline-block;
     width: 310px;
     text-align: left;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .benefit__title {
+    display: inline-block;
+    width: 240px;
+    font-weight:400px;
+    font-size: 30px;
+    line-height: 30px;
+    padding-top: 56px;
+    padding-bottom: 22px;
+  }
+  .benefit__text {
+      .benefit__text--hyphenation {
+        display: none;;
+      }
+    display: inline-block;
+    font-size: 18px;
+    line-height: 30px;
+    width: 248px;
+    text-align: center;
     margin: 0;
   }
 }

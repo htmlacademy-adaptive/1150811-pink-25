@@ -1,11 +1,8 @@
 .main-link {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 50px;
   text-align: center;
-  color: #FFF;
   border: 3px solid #FFF;
   border-radius: 29px;
+  @include regular-text(18px, 50px, 400, #FFF);
 }
 
 @media (min-width: $desktop-width) {

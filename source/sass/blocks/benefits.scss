@@ -2,42 +2,39 @@
   background-color: #F2F2F2;
 }
 
+.benefits__container {
+  display: flex;
+  flex-direction: column;
+}
+
 .benefits__content {
   display: inline-block;
   width: 280px;
   padding-bottom: 31px;
 }
 
-.benefits__image {
-  margin-top: 10px;
-}
-
-.benefits__extra {
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
-  .benefits__extra {
-    display: grid;
-    background-color: #FFF;
-    width: 660px;
-    z-index: 1;
-  }
   .benefits__content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 328px;
+    width: 330px;
     padding-bottom: 34px;
   }
-  .benefits__image {
-    display: block;
-    position: absolute;
-    align-self: flex-start;
-    left: 22px;
-    top: 10px;
-    margin-top: 0px;
-    z-index: 1;
+}
 
+@media (min-width: $desktop-width) {
+  .benefits__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+    padding-bottom: 0px;
+    box-shadow: 0px -25px 23px -30px rgba(34, 60, 80, 0.35);
+  }
+  .benefits__container {
+    display: flex;
+    flex-direction: row;
+    width: 960px;
   }
 }

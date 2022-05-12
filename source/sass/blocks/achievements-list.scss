@@ -1,0 +1,34 @@
+.achievements-list__item {
+  display: block;
+  position: relative;
+  width: 280px;
+  margin-bottom: 48px;
+  padding-top: 4px;
+}
+
+@media (min-width: $desktop-width) {
+  .achievements-list__item--cell-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .achievements-list__item--cell-2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  .achievements-list__item--cell-3 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  .achievements-list__item--cell-4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  .achievements-list__item--cell-5 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+  .achievements-list__item--cell-6 {
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+  }
+}

@@ -5,12 +5,14 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <body>
+    <div class="page-container">
       <header class="page-header">
         <div class="page-header__wrapper">
           <a class="page-header__logo logo">
             <picture>
-              <img class="logo__image" src="img/pink-logo-mobile.svg" alt="логотип Pink">
+              <source media="(min-width: 1200px)" srcset="img/logo-stars-desktop.svg" width="147">
+              <source media="(min-width: 660px)" srcset="img/logo-white-tablet.svg" width="145">
+              <img class="logo__image" src="img/logo-white-mobile.svg" alt="логотип Pink" width="74">
             </picture>
           </a>
           <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть и закрыть меню</span></button>
@@ -18,10 +20,10 @@
         <nav class="page-header__main-nav main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a>Фотографии</a>
+              <a class="site-list__link" href="#">Фотографии</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="form.html">Конкурс</a>
@@ -32,219 +34,236 @@
           </ul>
         </nav>
       </header>
-    <main class="catalog-main">
-      <div class="catalog-main__title-wrapper">
-        <h1 class="catalog-main__title slogan">Фотографии пользователей</h1>
-      </div>
-      <p class="catalog-main__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-      <section class="catalog-main__panorama panorama">
-        <h2 class="visually-hidden">Пользовательское фото</h2>
-        <div class="panorama__text-wrapper visually-hidden">
-          <p class="panorama__text">Панорама дня</p>
+      <main class="catalog-main">
+        <div class="catalog-main__title-wrapper">
+          <h1 class="catalog-main__title slogan">Фотографии пользователей</h1>
         </div>
-        <div class="panorama__image">
-          <a href="#">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/catalog-img/panorama-desktop.jpg">
-              <source media="(min-width: 660px)" srcset="img/catalog-img/panorama-tablet.jpg">
-              <img class="test" src="img/catalog-img/panorama-mobile.jpg" alt="Подвесной мост">
-            </picture>
-          </a>
-        </div>
-        <div class="panorama__desc panorama-desc">
-        <dl class="panorama-desc__list panorama-desc-list">
-          <dt class="panorama-desc-list__username">Анна <span class="panorama-desc-list__comment-time">(5минут назад)</span></dt>
-            <dd class="panorama-desc-list__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</dd>
-          <dt class="panorama-desc-list__like">Нравится:</dt>
-            <dd class="panorama-desc-list__like-value">215</dd>
-        </dl>
-        <svg class="like-icon">
-        </svg>
-        </div>
-      </section>
-      <section class="catalog-main__gallery gallery">
-      <h2 class="visually-hidden">Фотогалерея</h2>
-        <article class="gallery__photo-section photo-section">
-          <h3 class="visually-hidden">Пользовательское фото</h3>
-          <div class="photo-section__image photo">
+        <p class="catalog-main__text-1">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <section class="catalog-main__panorama panorama">
+          <h2 class="visually-hidden">Пользовательское фото</h2>
+          <div class="panorama__text-wrapper">
+            <p class="panorama__text">Панорама дня</p>
+          </div>
+          <div class="panorama__image">
             <a href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/catalog-img/photo-1-desktop.jpg">
-                <source media="(min-width: 660px)" srcset="img/catalog-img/photo-1-tablet.jpg">
-                <img src="img/catalog-img/photo-1-mobile.jpg" alt="Камера на штативе">
+                <source media="(min-width: 1200px)" srcset="img/catalog-img/panorama-desktop.jpg">
+                <source media="(min-width: 660px)" srcset="img/catalog-img/panorama-tablet.jpg">
+                <img src="img/catalog-img/panorama-mobile.jpg" alt="Подвесной мост">
               </picture>
             </a>
           </div>
-          <div class="photo-section__desc desc">
-          <dl class="desc__list desc-list">
-            <dt class="desc-list__username">Левон<span class="desc-list__comment-time">(5 часов назад)</span></dt>
-              <dd class="desc-list__text">Вчера он на луну летал, сегодня в руки к нам попал.</dd>
-            <dt class="desc-list__like">Нравится:</dt>
-              <dd class="desc-list__like-value">356</dd>
-          </dl>
-          <svg class="like-icon">
-          </svg>
+          <div class="panorama__desc panorama-desc">
+            <p class="panorama-desc__username">Анна <span class="panorama-desc__comment-time">(5 минут назад)</span></p>
+            <p class="panorama-desc__text">Прыгать или нет? Напишите в комментарии свой совет и <br class="panorama-desc__hyphenation" />смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <div class="panorama-desc__like-wrapper">
+              <img class="panorama-desc__like-icon" src="img/like-icon.svg" alt="Лайк" width="13">
+              <p class="panorama-desc__like-text">Нравится: <span class="panorama-desc__like-value">215</span></p>
+            </div>
           </div>
-        </article>
-        <article class="gallery__photo-section photo-section">
-          <h3 class="visually-hidden">Пользовательское фото</h3>
-          <div class="photo-section__image photo">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/catalog-img/photo-2-desktop.jpg">
-              <source media="(min-width: 660px)" srcset="img/catalog-img/photo-2-tablet.jpg">
-              <img src="img/catalog-img/photo-2-mobile.jpg" alt="Барабанная установка">
-            </picture>
+        </section>
+        <section class="catalog-main__gallery gallery">
+        <h2 class="visually-hidden">Фотогалерея</h2>
+          <article class="gallery__photo-section photo-section">
+            <h3 class="visually-hidden">Пользовательское фото</h3>
+            <div class="photo-section__image photo">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/catalog-img/photo-1-desktop.jpg">
+                  <source media="(min-width: 660px)" srcset="img/catalog-img/photo-1-tablet.jpg">
+                  <img src="img/catalog-img/photo-1-mobile.jpg" alt="Камера на штативе">
+                </picture>
+              </a>
+            </div>
+            <div class="photo-section__desc desc">
+              <p class="desc__username">Левон <span class="desc__comment-time">(5 часов назад)</span></p>
+              <p class="desc__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <div class="desc__like-wrapper">
+                <img class="desc__like-icon" src="img/like-icon.svg" alt="Лайк" width="13">
+                <p class="desc__like-text">Нравится: <span class="desc__like-value">356</span></p>
+              </div>
+            </div>
+          </article>
+          <article class="gallery__photo-section photo-section">
+            <h3 class="visually-hidden">Пользовательское фото</h3>
+            <div class="photo-section__image photo">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog-img/photo-2-desktop.jpg">
+                <source media="(min-width: 660px)" srcset="img/catalog-img/photo-2-tablet.jpg">
+                <img src="img/catalog-img/photo-2-mobile.jpg" alt="Барабанная установка">
+              </picture>
+            </div>
+            <div class="photo-section__desc desc">
+              <p class="desc__username">Антон <span class="desc__comment-time">(12 часов назад)</span></p>
+              <p class="desc__text">Соседи будут рады!</p>
+              <div class="desc__like-wrapper">
+                <img class="desc__like-icon" src="img/like-icon.svg" alt="Лайк" width="13">
+                <p class="desc__like-text">Нравится: <span class="desc__like-value">666</span></p>
+              </div>
+            </div>
+          </article>
+          <article class="gallery__photo-section photo-section">
+            <h3 class="visually-hidden">Пользовательское фото</h3>
+            <div class="photo-section__image photo">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog-img/photo-3-desktop.jpg">
+                <source media="(min-width: 660px)" srcset="img/catalog-img/photo-3-tablet.jpg">
+                <img src="img/catalog-img/photo-3-mobile.jpg" alt="Панорамное окно">
+              </picture>
+            </div>
+            <div class="photo-section__desc desc">
+              <p class="desc__username">Борис <span class="desc__comment-time">(20 часов назад)</span></p>
+              <p class="desc__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <div class="desc__like-wrapper">
+                <img class="desc__like-icon" src="img/like-icon.svg" alt="Лайк" width="13">
+                <p class="desc__like-text">Нравится: <span class="desc__like-value">215</span></p>
+              </div>
+            </div>
+          </article>
+          <article class="gallery__photo-section photo-section">
+            <h3 class="visually-hidden">Пользовательское фото</h3>
+            <div class="photo-section__image photo">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog-img/photo-4-desktop.jpg">
+                <source media="(min-width: 660px)" srcset="img/catalog-img/photo-4-tablet.jpg">
+                <img src="img/catalog-img/photo-4-mobile.jpg" alt="Ярмарка">
+              </picture>
+            </div>
+            <div class="photo-section__desc desc">
+              <p class="desc__username">Сергей <span class="desc__comment-time">(25 часов назад)</span></p>
+              <p class="desc__text">Самая кубанская в мире!</p>
+              <div class="desc__like-wrapper">
+                <img class="desc__like-icon" src="img/like-icon.svg" alt="Лайк" width="13">
+                <p class="desc__like-text">Нравится: <span class="desc__like-value">4</span></p>
+              </div>
+            </div>
+          </article>
+          <article class="gallery__photo-section photo-section">
+            <h3 class="visually-hidden">Пользовательское фото</h3>
+            <div class="photo-section__image photo">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog-img/photo-5-desktop.jpg">
+                <source media="(min-width: 660px)" srcset="img/catalog-img/photo-5-tablet.jpg">
+                <img src="img/catalog-img/photo-5-mobile.jpg" alt="Вид с горы">
+              </picture>
+            </div>
+            <div class="photo-section__desc desc">
+              <p class="desc__username">Максим <span class="desc__comment-time">(40 часов назад)</span></p>
+              <p class="desc__text">Где снег-то?</p>
+              <div class="desc__like-wrapper">
+                <img class="desc__like-icon" src="img/like-icon.svg" alt="Лайк" width="13">
+                <p class="desc__like-text">Нравится: <span class="desc__like-value">150</span></p>
+              </div>
+            </div>
+          </article>
+          <article class="gallery__photo-section photo-section">
+            <h3 class="visually-hidden">Пользовательское фото</h3>
+            <div class="photo-section__image photo">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/catalog-img/photo-6-desktop.jpg">
+                <source media="(min-width: 660px)" srcset="img/catalog-img/photo-6-tablet.jpg">
+                <img src="img/catalog-img/photo-6-mobile.jpg" alt="Крыло самолета">
+              </picture>
+            </div>
+            <div class="photo-section__desc desc">
+              <p class="desc__username">Надежда <span class="desc__comment-time">(45 часов назад)</span></p>
+              <p class="desc__text">Всем GM и взаимные лайки!</p>
+              <div class="desc__like-wrapper">
+                <img class="desc__like-icon" src="img/like-icon.svg" alt="Лайк" width="13">
+                <p class="desc__like-text">Нравится: <span class="desc__like-value">2560</span></p>
+              </div>
+            </div>
+          </article>
+        </section>
+        <p class="catalog-main__text-2">Затмите их всех! <br class="catalog-main__text-2-hyphenation" />Выкладывайте все, что накопилось в телефоне!</p>
+        <section class="catalog-main__adjustment-section adjustment-section">
+          <h2 class="visually-hidden">Инструмент обработки изображений</h2>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/catalog-img/photo-7-desktop.jpg">
+            <source media="(min-width: 660px)" srcset="img/catalog-img/photo-7-tablet.jpg">
+            <img class="adjustment-section__image" src="img/catalog-img/photo-7-mobile.jpg" alt="Фото пользователя">
+          </picture>
+          <ul class="adjustment-section__instruments instrument-list">
+            <li class="instrument-list__item instrument">
+              <button class="instrument__button instrument__button--crop" type="button" name="button">
+                <svg class="instrument__crop-icon" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.3">
+                <path d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z" fill="#283645"/>
+                </g>
+                </svg>
+              </button>
+              <div class="instrument__scale instrument__scale--crop">
+                <div class="instrument__switch">
+                  <span class="visually-hidden">Изменить значение</span>
+                </div>
+              </div>
+            </li>
+            <li class="instrument-list__item instrument">
+              <button class="instrument__button instrument__button--fill" type="button" name="button">
+                <svg class="instrument__fill-icon" width="48" height="43" viewBox="0 0 48 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.3">
+                <path d="M33.12 17.88L15.24 0L12.41 2.83L17.17 7.59L6.88 17.88C6.3182 18.4425 6.00264 19.205 6.00264 20C6.00264 20.795 6.3182 21.5575 6.88 22.12L17.88 33.12C18.4425 33.6818 19.205 33.9974 20 33.9974C20.795 33.9974 21.5575 33.6818 22.12 33.12L33.12 22.12C33.6818 21.5575 33.9974 20.795 33.9974 20C33.9974 19.205 33.6818 18.4425 33.12 17.88ZM10.41 20L20 10.42L29.59 20H10.41ZM38 23C38 23 34 27.33 34 30C34 31.0609 34.4214 32.0783 35.1716 32.8284C35.9217 33.5786 36.9391 34 38 34C39.0609 34 40.0783 33.5786 40.8284 32.8284C41.5786 32.0783 42 31.0609 42 30C42 27.33 38 23 38 23Z" fill="#283645"/>
+                <path d="M48 40H0V43H48V40Z" fill="#283645"/>
+                </g>
+                </svg>
+              </button>
+              <div class="instrument__scale instrument__scale--fill">
+                <div class="instrument__switch">
+                  <span class="visually-hidden">Изменить значение</span>
+                </div>
+              </div>
+            </li>
+            <li class="instrument-list__item instrument instrument--last-child">
+              <button class="instrument__button instrument__button--contrast" type="button" name="button">
+                <svg class="instrument__contrast-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.3">
+                <path d="M16 4C18.3734 4 20.6935 4.70379 22.6669 6.02236C24.6402 7.34094 26.1783 9.21509 27.0866 11.4078C27.9948 13.6005 28.2325 16.0133 27.7694 18.3411C27.3064 20.6689 26.1635 22.8071 24.4853 24.4853C22.8071 26.1635 20.6689 27.3064 18.3411 27.7694C16.0133 28.2324 13.6005 27.9948 11.4078 27.0866C9.21509 26.1783 7.34095 24.6402 6.02237 22.6668C4.70379 20.6935 4.00001 18.3734 4.00001 16C4.00001 12.8174 5.26429 9.76515 7.51473 7.51472C9.76516 5.26428 12.8174 4 16 4ZM16 0C12.8355 0 9.74207 0.938384 7.11088 2.69649C4.4797 4.45459 2.42894 6.95345 1.21793 9.87706C0.0069325 12.8007 -0.309921 16.0177 0.307443 19.1214C0.924806 22.2251 2.44866 25.0761 4.6863 27.3137C6.92394 29.5513 9.77487 31.0752 12.8786 31.6926C15.9823 32.3099 19.1993 31.9931 22.1229 30.7821C25.0466 29.5711 27.5454 27.5203 29.3035 24.8891C31.0616 22.2579 32 19.1645 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0Z" fill="#283645"/>
+                <path d="M16 24.29C18.1536 24.1422 20.1708 23.1824 21.644 21.6046C23.1172 20.0268 23.9366 17.9486 23.9366 15.79C23.9366 13.6314 23.1172 11.5532 21.644 9.97538C20.1708 8.39759 18.1536 7.43782 16 7.29" fill="#283645"/>
+                </g>
+                </svg>
+              </button>
+              <div class="instrument__scale instrument__scale--contrast">
+                <div class="instrument__switch">
+                  <span class="visually-hidden">Изменить значение</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="adjustment-section__buttons-wrapper">
+            <button class="adjustment-section__submit" type="button" name="submit">Запостить</button>
+            <button class="adjustment-section__cancel" type="button" name="cancel">Отмена</button>
           </div>
-          <div class="photo-section__desc desc">
-          <dl class="desc__list desc-list">
-            <dt class="desc-list__username">Антон<span class="desc-list__comment-time">(12 часов назад)</span></dt>
-              <dd class="desc-list__text">Соседи будут рады!</dd>
-            <dt class="desc-list__like">Нравится:</dt>
-              <dd class="desc-list__like-value">666</dd>
-          </dl>
-          <svg class="like-icon">
-          </svg>
-          </div>
-        </article>
-        <article class="gallery__photo-section photo-section">
-          <h3 class="visually-hidden">Пользовательское фото</h3>
-          <div class="photo-section__image photo">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/catalog-img/photo-3-desktop.jpg">
-              <source media="(min-width: 660px)" srcset="img/catalog-img/photo-3-tablet.jpg">
-              <img src="img/catalog-img/photo-3-mobile.jpg" alt="Панорамное окно">
-            </picture>
-          </div>
-          <div class="photo-section__desc desc">
-          <dl class="desc__list desc-list">
-            <dt class="desc-list__username">Борис<span class="desc-list__comment-time">(20 часов назад)</span></dt>
-              <dd class="desc-list__text">Здесь могла быть ваша цитата о высоком и вечном.</dd>
-            <dt class="desc-list__like">Нравится:</dt>
-              <dd class="desc-list__like-value">215</dd>
-          </dl>
-          <svg class="like-icon">
-          </svg>
-          </div>
-        </article>
-        <article class="gallery__photo-section photo-section">
-          <h3 class="visually-hidden">Пользовательское фото</h3>
-          <div class="photo-section__image photo">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/catalog-img/photo-4-desktop.jpg">
-              <source media="(min-width: 660px)" srcset="img/catalog-img/photo-4-tablet.jpg">
-              <img src="img/catalog-img/photo-4-mobile.jpg" alt="Ярмарка">
-            </picture>
-          </div>
-          <div class="photo-section__desc desc">
-          <dl class="desc__list desc-list">
-            <dt class="desc-list__username">Сергей<span class="desc-list__comment-time">(25 часов назад)</span></dt>
-              <dd class="desc-list__text">Самая кубанская в мире!</dd>
-            <dt class="desc-list__like">Нравится:</dt>
-              <dd class="desc-list__like-value">4</dd>
-          </dl>
-          <svg class="like-icon">
-          </svg>
-          </div>
-        </article>
-        <article class="gallery__photo-section photo-section">
-          <h3 class="visually-hidden">Пользовательское фото</h3>
-          <div class="photo-section__image photo">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/catalog-img/photo-5-desktop.jpg">
-              <source media="(min-width: 660px)" srcset="img/catalog-img/photo-5-tablet.jpg">
-              <img src="img/catalog-img/photo-5-mobile.jpg" alt="Вид с горы">
-            </picture>
-          </div>
-          <div class="photo-section__desc desc">
-          <dl class="desc__list desc-list">
-            <dt class="desc-list__username">Максим<span class="desc-list__comment-time">(40 часов назад)</span></dt>
-              <dd class="desc-list__text">Где снег-то?</dd>
-            <dt class="desc-list__like">Нравится:</dt>
-              <dd class="desc-list__like-value">150</dd>
-          </dl>
-          <svg class="like-icon">
-          </svg>
-          </div>
-        </article>
-        <article class="gallery__photo-section photo-section">
-          <h3 class="visually-hidden">Пользовательское фото</h3>
-          <div class="photo-section__image photo">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/catalog-img/photo-6-desktop.jpg">
-              <source media="(min-width: 660px)" srcset="img/catalog-img/photo-6-tablet.jpg">
-              <img src="img/catalog-img/photo-6-mobile.jpg" alt="Крыло самолета">
-            </picture>
-          </div>
-          <div class="photo-section__desc desc">
-          <dl class="desc__list desc-list">
-            <dt class="desc-list__username">Надежда<span class="desc-list__comment-time">(45 часов назад)</span></dt>
-              <dd class="desc-list__text">Всем GM и взаимные лайки!</dd>
-            <dt class="desc-list__like">Нравится:</dt>
-              <dd class="desc-list__like-value">2560</dd>
-          </dl>
-          </div>
-          <svg class="like-icon">
-          </svg>
-        </article>
-      </section>
-      <p class="catalog-main__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-      <section class="catalog-main__adjustment-section adjustment-section">
-        <h2 class="visually-hidden">Инструмент обработки изображений</h2>
-        <picture class="adjustment-section__image">
-          <source media="(min-width: 1200px)" srcset="img/catalog-img/photo-7-desktop.jpg">
-          <source media="(min-width: 660px)" srcset="img/catalog-img/photo-7-tablet.jpg">
-          <img src="img/catalog-img/photo-7-mobile.jpg" alt="Фото пользователя">
-        </picture>
-        <ul class="adjustment-section__instrument instrument-list">
-          <li class="instrument-list__item instrument">
-            <svg class="instrument__crop">
-            </svg>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <a class="page-footer__logo footer-logo">
+          <img class="footer-logo__image" src="img/logo-pink-glasses.svg" alt="логотип Pink">
+        </a>
+        <ul class="page-footer__socials socials-list">
+          <li class="socials-list__item socials-icon">
+            <a href="#" class="socials-icon__vkontakte">
+              <img class="footer-logo__image" src="img/vk-icon.svg" alt="логотип Pink">
+            </a>
           </li>
-          <li class="instrument-list__item instrument">
-            <svg class="instrument__fill">
-            </svg>
+          <li class="socials-list__item socials-icon">
+            <a href="#" class="socials-icon__telegram">
+              <img class="footer-logo__image" src="img/telegram-icon.svg" alt="логотип Pink">
+            </a>
           </li>
-          <li class="instrument-list__item instrument">
-            <svg class="instrument__contrast">
-            </svg>
+          <li class="socials-list__item socials-icon">
+            <a href="#" class="socials-icon__youtube">
+              <img class="footer-logo__image" src="img/youtube-icon.svg" alt="логотип Pink">
+            </a>
           </li>
         </ul>
-        <div class="adjustment-section__scale">
-          <div class="adjustment-section__switch">
-            <span class="visually-hidden">Изменить значение</span>
-          </div>
+        <div class="page-footer__academy academy">
+          <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+            <svg class="academy__logo" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#D22856"/>
+            </svg>
+          </a>
         </div>
-        <button class="adjustment-section__submit" type="button" name="submit">Запостить</button>
-        <button class="adjustment-section__cancel" type="button" name="cancel">Отмена</button>
-      </section>
-    </main>
-    <footer class="page-footer">
-      <a class="page-footer__logo footer-logo">
-        <img class="footer-logo__image" src="img/logo-pink-glasses.svg" alt="логотип Pink">
-      </a>
-      <ul class="page-footer__socials socials-list">
-        <li class="socials-list__item socials-icon">
-          <a href="#" class="socials-icon__vkontakte">
-            <img class="footer-logo__image" src="img/vk-icon.svg" alt="логотип Pink">
-          </a>
-        </li>
-        <li class="socials-list__item socials-icon">
-          <a href="#" class="socials-icon__telegram">
-            <img class="footer-logo__image" src="img/telegram-icon.svg" alt="логотип Pink">
-          </a>
-        </li>
-        <li class="socials-list__item socials-icon">
-          <a href="#" class="socials-icon__youtube">
-            <img class="footer-logo__image" src="img/youtube-icon.svg" alt="логотип Pink">
-          </a>
-        </li>
-      </ul>
-      <div class="page-footer__academy academy">
-        <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
-          <svg>
-          </svg>
-        </a>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

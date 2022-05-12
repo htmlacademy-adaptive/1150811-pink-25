@@ -1,8 +1,23 @@
-.hit-ribbon {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 30px;
+.hit-ribbon__text {
   text-align: center;
   text-transform: uppercase;
   color: #FFF;
+  @include regular-text(14px, 24px, #FFF);
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .hit-ribbon__text {
+    text-align: center;
+    text-transform: uppercase;
+    @include regular-text(14px, 20px, #FFF);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hit-ribbon__text {
+    text-align: center;
+    text-transform: uppercase;
+    @include regular-text(14px, 24px, #FFF);
+  }
 }

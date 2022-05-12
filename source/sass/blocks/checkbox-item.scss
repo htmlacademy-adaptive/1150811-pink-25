@@ -1,8 +1,38 @@
 .checkbox-item__label {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 30px;
-  text-align: center;
-  text-transform: uppercase;
-  color: $color-midnight;
+  display: inline-block;
+  @include regular-text(18px, 30px);
+}
+
+.checkbox-item label {
+  padding-left: 60px;
+}
+
+.checkbox-item__input + label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  vertical-align: middle;
+  background-color: #FFF;
+  width: 35px;
+  height: 35px;
+  border: $input-border;
+}
+
+.checkbox-item__input:checked + label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  vertical-align: middle;
+  background: url(../img/tick.svg);
+  background-repeat: no-repeat;
+  background-size: 21px 16px;
+  background-position: center;
+  background-color: #FFF;
+  width: 35px;
+  height: 35px;
+  border: $input-border;
 }

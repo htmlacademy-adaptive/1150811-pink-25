@@ -1,0 +1,195 @@
+.instrument {
+  display: block;
+  position: relative;
+  padding-bottom: 75px;
+}
+
+.instrument__button {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  overflow: hidden;
+  background-color: inherit;
+}
+
+.instrument__button--crop {
+  width: 44px;
+  height: 44px;
+}
+
+.instrument__button--fill {
+  width: 43px;
+  height: 43px;
+}
+
+.instrument__button--contrast {
+  width: 32px;
+  height: 32px;
+}
+
+.instrument__scale {
+  display: block;
+  position: absolute;
+  background-color: $color-midnight;
+}
+
+.instrument__scale--crop {
+  top: 83px;
+  left: -17px;
+  width: 240px;
+  height: 2px;
+}
+
+.instrument__scale--fill {
+  display: none;
+  top: 83px;
+  left: -100px;
+  width: 240px;
+  height: 2px;
+}
+
+.instrument__scale--contrast {
+  display: none;
+  top: 77px;
+  right: -29px;
+  width: 240px;
+  height: 2px;
+}
+
+.instrument__switch {
+  display: block;
+  position: absolute;
+  top: -5px;
+  right: 33px;
+  width: 10px;
+  height: 10px;
+  background: #FFF;
+  border: 2px solid $color-cerise;
+  border-radius: 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .instrument {
+    display: flex;
+    width: 275px;
+    justify-content: space-between;
+    align-items: center;
+    position: inherit;
+    border-bottom: 1px solid rgba(40, 54, 69, .1);
+    min-height: 70.3px;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+  .instrument__button--crop {
+    width: 22px;
+    height: 22px;
+  }
+
+  .instrument__button--fill {
+    width: 24px;
+    height: 26px;
+  }
+
+  .instrument__button--contrast {
+    width: 20px;
+    height: 22px;
+  }
+  .instrument__crop-icon {
+    display: block;
+    width: 22px;
+    height: 22px;
+  }
+
+  .instrument__fill-icon {
+    display: block;
+    width: 24px;
+    height: 22px;
+    padding-top: 2px;
+  }
+
+  .instrument__contrast-icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+    padding-left: 2px;
+  }
+
+  .instrument__crop-icon path,
+  .instrument__crop-icon g,
+  .instrument__fill-icon path,
+  .instrument__fill-icon g,
+  .instrument__contrast-icon path,
+  .instrument__contrast-icon g {
+    fill: $color-cerise;
+    opacity: 1;
+  }
+
+  .instrument__scale--crop,
+  .instrument__scale--fill,
+  .instrument__scale--contrast   {
+    display: block;
+    position: sticky;
+    position: -webkit-sticky;
+    width: 202px;
+    margin-right: 23px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .instrument {
+    display: flex;
+    width: 410px;
+    justify-content: space-between;
+    align-items: center;
+    position: inherit;
+    border-bottom: 1px solid rgba(40, 54, 69, .1);
+    min-height: 70.3px;
+    margin-left: 55px;
+    padding-bottom: 0;
+  }
+
+  .instrument--last-child {
+    border-bottom: transparent;
+  }
+
+  .instrument__button--crop {
+    width: 44px;
+    height: 44px;
+  }
+
+  .instrument__button--fill {
+    width: 46px;
+    height: 44px;
+  }
+
+  .instrument__button--contrast {
+    width: 42px;
+    height: 32px;
+  }
+  .instrument__crop-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .instrument__fill-icon {
+    width: 48px;
+    height: 43px;
+  }
+
+  .instrument__contrast-icon {
+    width: 32px;
+    height: 32px;
+    padding-left: 5px;
+  }
+
+  .instrument__scale--crop,
+  .instrument__scale--fill,
+  .instrument__scale--contrast   {
+    display: block;
+    position: sticky;
+    position: -webkit-sticky;
+    width: 288px;
+    margin-right: 29px;
+  }
+}

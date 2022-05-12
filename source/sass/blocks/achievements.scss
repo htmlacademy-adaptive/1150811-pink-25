@@ -1,12 +1,71 @@
 .achievements {
-  background-color: #E5E5E5;
+  background-color: $color-gray;
 }
 
 .achievements__title {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 18px;
+  display: inline-block;
+  width: 218px;
+  padding-top: 27px;
+  @include regular-text(14px, 18px, 300, $color-cerise);
   text-align: center;
   text-transform: uppercase;
-  color: $color-cerise;
+}
+
+.achievements__list {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  padding-top: 26px;
+}
+
+@media (min-width: $tablet-width) {
+  .achievements {
+    position: relative;
+    border: $input-border;
+    border-radius: 3px;
+    background-color: #FFF;
+    padding-bottom: 4px;
+  }
+  .achievements__title {
+    display: inline-block;
+    position: absolute;
+    top: -20px;
+    width: 435px;
+    padding-top: 0;
+    background-color: #FFF;
+  }
+  .achievements__list {
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    width: 280px;
+    padding-top: 52px;
+    padding-left: 57px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .achievements {
+    position: relative;
+    border: $input-border;
+    border-radius: 3px;
+    background-color: #FFF;
+    padding-bottom: 12px;
+  }
+  .achievements__title {
+    display: inline-block;
+    position: absolute;
+    top: -20px;
+    width: 435px;
+    padding-top: 0;
+    background-color: #FFF;
+  }
+  .achievements__list {
+    display: grid;
+    grid-template-columns: 314px 295px 267px;
+    width: 876px;
+    padding-top: 0;
+    padding-left: 0;
+    margin-left: 58px;
+  }
 }

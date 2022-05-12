@@ -27,28 +27,28 @@
   align-items: center;
   width: 320px;
   padding-top: 82px;
-  clip-path: polygon(0 3.5%, 100% 0, 100% 95%, 0 95%);
+  clip-path: polygon(0 6%, 100% 0, 100% 100%, 0 100%);
+}
+
+.page-main__extra {
+  display: none;
 }
 
 .page-main__comments {
   display: flex;
-  position: relative;
   flex-direction: column;
   align-items: center;
   width: 320px;
-  padding-bottom: 50px;
   background-color: #FFF;
+  padding-bottom: 36px;
 }
 
-.page-main__tarrifes {
+.page-main__tariffes {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 320px;
-}
-
-.page-main__features {
-
+  clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
 }
 
 .page-main__contacts {
@@ -76,21 +76,43 @@
     padding-top: 47px;
     padding-bottom: 32px;
   }
-  .page-main__benefits {
-    display: flex;
-    align-items: flex-end;
+
+  .page-main__benefits-wrapper {
+    display: block;
     position: relative;
+  }
+
+  .page-main__benefits {
+    align-items: flex-end;
     width: 660px;
     padding-top: 73px;
+    padding-bottom: 10px;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+  }
+  .page-main__extra {
+    display: grid;
+    grid-template-columns: 330px 330px;
+    grid-template-rows: 160px auto 47px;
+    width: 660px;
+    z-index: 1;
   }
   .page-main__comments {
     width: 660px;
     top: auto;
+    padding-bottom: 14px;
   }
-  .page-main__contacts {
-    display: grid;
+
+  .page-main__tariffes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 660px;
-    top: auto;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .page-main__contacts {
+    width: 660px;
+    z-index: 1;
   }
 }
 
@@ -107,18 +129,42 @@
   .page-main__slogan-box {
     width: 1200px;
     padding-top: 62px;
+    padding-bottom: 50px;
+  }
+  .page-main__benefits-wrapper {
+    width: 1200px;
   }
   .page-main__benefits {
-    display: grid;
+    flex-direction: column;
+    align-items: center;
     width: 1200px;
+    padding-top: 308px;
+    padding-bottom: 0px;
+    clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 100%);
+  }
+  .page-main__extra {
+    grid-template-columns: 500px 700px;
+    grid-template-rows: 196px auto 137px;
+    width: 1200px;
+    z-index: auto;
   }
   .page-main__comments {
-    width: 1200px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 940px;
     top: auto;
+    padding-bottom: 34px;
   }
-  .page-main__contacts {
-    display: grid;
+
+  .page-main__tariffes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 1200px;
-    top: auto;
+    clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .page-main__contacts {
+    width: 1200px;
   }
 }
