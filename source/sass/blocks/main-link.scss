@@ -5,6 +5,16 @@
   @include regular-text(18px, 50px, 400, #FFF);
 }
 
+.main-link:hover {
+  color: $color-cerise;
+  background-color: #FFF;
+}
+
+.main-link:active {
+  color: rgba(210, 40, 86, .3);
+  background-color: #FFF;
+}
+
 @media (min-width: $desktop-width) {
   .main-link {
     font-size: 21px;
