@@ -8,16 +8,40 @@
 .contact__telephone {
   display: inline-block;
   width: 250px;
-  text-align: center;
-  text-transform: uppercase;
+  text-align: center;;
   margin: 0;
+}
+
+.contact__telephone-link {
   @include regular-text(24px, 33px, 200, $color-cerise);
+  text-transform: uppercase;
+}
+
+.contact__telephone-link:hover {
+  color: $color-cerise;
+}
+
+.contact__telephone-link:active {
+  color: $color-cerise;
 }
 
 .contact__mail {
   text-align: center;
   margin: 0;
+}
+
+.contact__mail-link {
   @include regular-text(24px, 33px, 200, $color-cerise);
+}
+
+.contact__mail-link:hover {
+  color: $color-midnight;
+  border-bottom: solid 1px $color-midnight;
+}
+
+.contact__mail-link:active {
+  color: $color-midnight;
+  opacity: 0.3;
 }
 
 .contact__address {

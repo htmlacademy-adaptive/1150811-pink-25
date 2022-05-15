@@ -36,6 +36,7 @@
   width: 37px;
   height: 37px;
   border: $input-border;
+  border-color: $color-cerise;
   border-radius: 50%;
   background: url(../img/ellipse-small.svg);
   background-repeat: no-repeat;
@@ -45,16 +46,11 @@
 }
 
 .radio-item__input + label:hover::before {
-  border: 1px solid #bcbcbc;
+  border: 2px solid $color-midnight;
 }
 
 .radio-item__input:checked + label:hover::before {
-  border: 1px solid #bcbcbc;
-}
-
-.radio-item__input:checked + label:active::before {
-  border: 1px solid #bcbcbc;
-  opacity: 0.5;
+  border: 2px solid $color-cerise;
 }
 
 @media (min-width: $tablet-width) {

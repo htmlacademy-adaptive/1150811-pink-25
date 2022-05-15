@@ -1,7 +1,7 @@
 .instrument {
   display: block;
   position: relative;
-  padding-bottom: 75px;
+  padding-bottom: 73px;
 }
 
 .instrument__button {
@@ -28,6 +28,22 @@
   height: 32px;
 }
 
+.instrument__button:hover {
+  .instrument__crop-icon path,
+  .instrument__fill-icon path,
+  .instrument__contrast-icon path {
+    opacity: 1;
+  }
+}
+
+.instrument__button:active {
+  .instrument__crop-icon path,
+  .instrument__fill-icon path,
+  .instrument__contrast-icon path {
+    fill: $color-cerise;
+  }
+}
+
 .instrument__scale {
   display: block;
   position: absolute;
@@ -35,7 +51,7 @@
 }
 
 .instrument__scale--crop {
-  top: 83px;
+  top: 81px;
   left: -17px;
   width: 240px;
   height: 2px;
@@ -67,6 +83,10 @@
   background: #FFF;
   border: 2px solid $color-cerise;
   border-radius: 50%;
+}
+
+.instrument__switch:active {
+  background-color: $color-cerise;
 }
 
 @media (min-width: $tablet-width) {

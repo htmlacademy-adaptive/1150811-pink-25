@@ -1,0 +1,35 @@
+.socials-icon__link-vkontakte:hover {
+  .socials-icon__vkontakte-cirle path {
+    fill-opacity: 1;
+  }
+}
+
+.socials-icon__link-telegram:hover {
+  .socials-icon__telegram-circle path {
+    fill-opacity: 1;
+  }
+}
+
+.socials-icon__link-youtube:hover {
+  .socials-icon__youtube-circle path {
+    fill-opacity: 1;
+  }
+}
+
+.socials-icon__link-vkontakte:active {
+  .socials-icon__vkontakte-image {
+    opacity: 0.1;
+  }
+}
+
+.socials-icon__link-telegram:active {
+  .socials-icon__telegram-image {
+    opacity: 0.1;
+  }
+}
+
+.socials-icon__link-youtube:active {
+  .socials-icon__youtube-image {
+    opacity: 0.1;
+  }
+}

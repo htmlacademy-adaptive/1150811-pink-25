@@ -29,6 +29,13 @@
   @include regular-text(14px, 24px);
 }
 
+.desc__like-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  width: 240px;
+}
+
 .desc__like-icon {
   display: inline-block;
   width: 13px;
@@ -64,7 +71,7 @@
   .desc__comment-time {
     text-transform: uppercase;
     margin: 0;
-    @include regular-text(14px, 24px, 200);
+    @include regular-text(12px, 24px, 200);
   }
 
   .desc__text {
@@ -103,7 +110,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .desc__username {
     padding-left: 28px;
   }

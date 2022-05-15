@@ -1,0 +1,32 @@
+.footer-logo:hover {
+  .footer-logo__mobile-text path {
+    fill: $color-cerise;
+  }
+}
+
+.footer-logo:active {
+  .footer-logo__mobile-text path {
+    fill: $color-midnight;
+  }
+  opacity: 0.3;
+}
+
+.footer-logo__desktop {
+  display: none;
+}
+
+@media (min-width: $mobile-width) {
+
+}
+
+@media (min-width: $desktop-width) {
+  .footer-logo__desktop {
+    display: block;
+  }
+  .footer-logo__mobile {
+    display: none;
+  }
+  .footer-logo:active {
+    opacity: 1;
+  }
+}

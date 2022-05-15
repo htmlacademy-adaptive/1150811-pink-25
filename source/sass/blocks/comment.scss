@@ -29,7 +29,7 @@
     display: inline-block;
     text-align: center;
     margin: 0;
-    @include regular-text($line-height: 30px);
+    @include regular-text(14px, 30px);
   }
   .comment__text {
     text-align: center;
@@ -52,6 +52,7 @@
   }
   .comment__desc {
     padding-top: 2px;
+    font-size: 18px;
   }
   .comment__text {
     text-align: center;
