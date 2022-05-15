@@ -10,6 +10,7 @@
   text-align: center;
   text-transform: uppercase;
   @include regular-text(12px, 22px, 400, #FFF);
+  margin: 7px 0;
 }
 
 .panorama__image {

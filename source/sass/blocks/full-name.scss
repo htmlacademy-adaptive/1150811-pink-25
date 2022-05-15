@@ -18,6 +18,14 @@
   @include regular-text(18px, 30px);
 }
 
+.full-name__input:hover {
+  border-color: $color-midnight;
+}
+
+.full-name__input:focus {
+  outline-color: $color-cerise;
+}
+
 @media (min-width: $tablet-width) {
   .full-name__label {
     flex-direction: row;

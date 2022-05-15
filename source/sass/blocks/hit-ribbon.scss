@@ -1,8 +1,7 @@
 .hit-ribbon__text {
   text-align: center;
   text-transform: uppercase;
-  color: #FFF;
-  @include regular-text(14px, 24px, #FFF);
+  @include regular-text(14px, 24px, 300, #FFF);
   margin: 0;
 }
 
@@ -10,7 +9,7 @@
   .hit-ribbon__text {
     text-align: center;
     text-transform: uppercase;
-    @include regular-text(14px, 20px, #FFF);
+    @include regular-text(14px, 20px, 300, #FFF);
   }
 }
 
@@ -18,6 +17,6 @@
   .hit-ribbon__text {
     text-align: center;
     text-transform: uppercase;
-    @include regular-text(14px, 24px, #FFF);
+    @include regular-text(14px, 24px, 300, #FFF);
   }
 }

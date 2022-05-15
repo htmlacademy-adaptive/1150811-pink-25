@@ -36,6 +36,19 @@
   margin: 0 auto;
   margin-top: 25px;
   @include regular-text(18px, 61px, 400, #FFF);
+  cursor: pointer;
+}
+
+.modal-positive__button:hover {
+  background-color: #1C9B5E;
+}
+
+.modal-positive__button:active {
+  color: rgba(255, 255, 255, .3);
+}
+
+.modal-positive__button:disabled {
+  background-color: #E5E5E5;
 }
 
 @media (min-width: $tablet-width) {

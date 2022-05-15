@@ -2,7 +2,8 @@
   display: none;
 }
 
-.user-contacts__label {
+.user-contacts__label-phone,
+.user-contacts__label-mail {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -20,6 +21,14 @@
   margin-left: -23px;
   padding-left: 21px;
   @include regular-text(18px, 30px);
+}
+
+.user-contacts__input:hover {
+  border-color: $color-midnight;
+}
+
+.user-contacts__input:focus {
+  outline-color: $color-cerise;
 }
 
 @media (min-width: $tablet-width) {
@@ -44,7 +53,9 @@
     @include regular-text(14px, 18px, $color: $color-cerise);
   }
 
-  .user-contacts__label {
+  .user-contacts__label-phone,
+  .user-contacts__label-mail {
+    position: relative;
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-start;
@@ -53,6 +64,30 @@
     padding-bottom: 15px;
     padding-left: 12px;
     @include regular-text(14px, 48px, $color: $color-cerise);
+  }
+
+  .user-contacts__label-phone:after {
+    content: "";
+    position: absolute;
+    right: -5px;
+    top: 7px;
+    width: 60px;
+    height: 60px;
+    background: url(../img/phone-icon.svg) no-repeat;
+    background-position: 50% 50%;
+    background-color: #E5E5E5;
+  }
+
+  .user-contacts__label-mail:after {
+    content: "";
+    position: absolute;
+    right: -5px;
+    top: 7px;
+    width: 60px;
+    height: 60px;
+    background: url(../img/mail-icon.svg) no-repeat;
+    background-position: 50% 50%;
+    background-color: #E5E5E5;
   }
 
   .user-contacts__input {
@@ -80,7 +115,8 @@
     left: 338px;
   }
 
-  .user-contacts__label {
+  .user-contacts__label-phone,
+  .user-contacts__label-mail {
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-start;
@@ -89,7 +125,7 @@
     width: 350px;
     text-transform: uppercase;
     padding-bottom: 4px;
-    @include regular-text(14px, 30px, $color: $color-cerise);
+    @include regular-text(14px, 48px, $color: $color-cerise);
   }
 
   .user-contacts__input {

@@ -6,10 +6,7 @@
 
 
 .site-list__item {
-  font-weight: 400;
-  font-size: 18px;
   text-align: center;
-  text-transform: uppercase;
   padding-top: 22px;
   padding-bottom: 20px;
   border-bottom: 1px solid #000;
@@ -17,7 +14,23 @@
 }
 
 .site-list__link {
+  font-weight: 400;
+  font-size: 18px;
   color: #FFF;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+}
+
+.site-list__link:hover {
+  color: $color-cerise
+}
+
+.site-list__link:active {
+  color: rgba(255, 255, 255, .3);
+}
+
+.site-list__link--active-link {
+  border-bottom: solid 2px #FFFFFF;
 }
 
 @media (min-width: $tablet-width) {
@@ -42,5 +55,12 @@
     text-transform: none;
     padding-top: 45px;
     border-bottom: none;
+  }
+  .site-list__link {
+    font-weight: 300;
+    font-size: 18px;
+    color: #FFF;
+    text-transform: none;
+    padding-bottom: 8px;
   }
 }

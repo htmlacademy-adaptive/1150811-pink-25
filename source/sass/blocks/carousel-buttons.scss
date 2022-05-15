@@ -17,3 +17,16 @@
   background-color: #FFF;
   opacity: 1;
 }
+
+.carousel-buttons__button:hover {
+  opacity: 0.6;
+}
+
+.carousel-buttons__button:active {
+  opacity: 0.1;
+}
+
+.carousel-buttons__button--active:hover,
+.carousel-buttons__button--active:active {
+  opacity: 1;
+}

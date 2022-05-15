@@ -9,6 +9,18 @@
   color: $color-midnight;
 }
 
+.academy__link:hover {
+  .academy__logo path {
+    fill: $color-midnight;
+  }
+}
+
+.academy__link:active {
+  .academy__logo path {
+    fill-opacity: 0.3;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .academy__link {
     font-size: 18px;

@@ -4,6 +4,12 @@
   cursor: pointer;
 }
 
+.comments__toggle-left,
+.comments__toggle-right {
+  display: none;
+  cursor: pointer;
+}
+
 .comments__content {
   display: inline-block;
   width: 280px;
@@ -37,21 +43,43 @@
   }
   .comments__toggle-left {
     display: block;
-    background-image: url("../img/arrow-left.svg");
-    background-repeat: no-repeat;
+    background-color: inherit;
+    border: none;
     width: 22px;
     height: 41px;
     align-self: flex-end;
-    margin-bottom: 119px;
+    margin-bottom: 118px;
+    padding: 0;
   }
   .comments__toggle-right {
     display: block;
-    background-image: url("../img/arrow-right.svg");
-    background-repeat: no-repeat;
+    background-color: inherit;
+    border: none;
     width: 22px;
     height: 41px;
     align-self: flex-end;
-    margin-bottom: 119px;
+    margin-bottom: 118px;
+    padding: 0;
+  }
+  .comments__toggle-left:hover {
+    .comments__toggle-left-image path {
+      opacity: 1;
+    }
+  }
+  .comments__toggle-right:hover {
+    .comments__toggle-right-image path {
+      opacity: 1;
+    }
+  }
+  .comments__toggle-left:active {
+    .comments__toggle-left-image path {
+      opacity: 0.1;
+    }
+  }
+  .comments__toggle-right:active {
+    .comments__toggle-right-image path {
+      opacity: 0.1;
+    }
   }
   .comments__buttons {
     display: none;

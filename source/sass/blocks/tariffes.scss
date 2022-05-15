@@ -17,6 +17,7 @@
   margin: 0;
   clip-path: polygon(23% 0, 77% 0, 100% 100%, 0 100%);
   transform: rotate(-45deg);
+  border-color: transparent;
 }
 
 .tariffes__list {
@@ -84,16 +85,13 @@
   display: block;
   width: 27px;
   height: 33px;
-  background: url(../img/yes-icon.svg) no-repeat;
   padding-right: 21px;
-  margin-top: 10px;
 }
 
 .tariffes__tag-no {
   display: block;
   width: 27px;
   height: 27px;
-  background: url(../img/no-icon.svg) no-repeat;
   padding-right: 18px;
 }
 
@@ -174,19 +172,10 @@
   }
 
   .tariffes__tag-yes {
-    display: block;
-    width: 33px;
-    height: 33px;
-    background: url(../img/yes-icon.svg) no-repeat;
     padding-right: 0;
-    margin-top: 10px;
   }
 
   .tariffes__tag-no {
-    display: block;
-    width: 27px;
-    height: 27px;
-    background: url(../img/no-icon.svg) no-repeat;
     padding-right: 0;
   }
 

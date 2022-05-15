@@ -18,6 +18,7 @@
   width: 35px;
   height: 35px;
   border: $input-border;
+  border-radius: 2px;
 }
 
 .checkbox-item__input:checked + label::before {
@@ -35,4 +36,12 @@
   width: 35px;
   height: 35px;
   border: $input-border;
+}
+
+.checkbox-item__input + label:hover::before {
+  border-color: $color-midnight;
+}
+
+.checkbox-item__input + label:active::before {
+  border-color: $color-cerise;
 }
