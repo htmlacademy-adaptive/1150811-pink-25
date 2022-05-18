@@ -110,7 +110,6 @@
     width: 24px;
     height: 26px;
   }
-
   .instrument__button--contrast {
     width: 20px;
     height: 22px;
@@ -120,14 +119,12 @@
     width: 22px;
     height: 22px;
   }
-
   .instrument__fill-icon {
     display: block;
     width: 24px;
     height: 22px;
     padding-top: 2px;
   }
-
   .instrument__contrast-icon {
     display: block;
     width: 16px;
@@ -144,7 +141,6 @@
     fill: $color-cerise;
     opacity: 1;
   }
-
   .instrument__scale--crop,
   .instrument__scale--fill,
   .instrument__scale--contrast   {
@@ -171,16 +167,13 @@
   .instrument--last-child {
     border-bottom: transparent;
   }
-
   .instrument__button--crop {
     width: 44px;
     height: 44px;
   }
-
   .instrument__button--fill {
     width: 46px;
     height: 44px;
-  }
 
   .instrument__button--contrast {
     width: 42px;
@@ -190,18 +183,15 @@
     width: 44px;
     height: 44px;
   }
-
   .instrument__fill-icon {
     width: 48px;
     height: 43px;
   }
-
   .instrument__contrast-icon {
     width: 32px;
     height: 32px;
     padding-left: 5px;
   }
-
   .instrument__scale--crop,
   .instrument__scale--fill,
   .instrument__scale--contrast   {
