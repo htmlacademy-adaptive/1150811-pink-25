@@ -1,7 +1,7 @@
 .instrument {
   display: block;
   position: relative;
-  padding-bottom: 73px;
+  margin-bottom: 73px;
 }
 
 .instrument__button {
@@ -99,7 +99,7 @@
     border-bottom: 1px solid rgba(40, 54, 69, .1);
     min-height: 70.3px;
     padding-left: 0;
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
   .instrument__button--crop {
     width: 22px;
@@ -166,7 +166,6 @@
     border-bottom: 1px solid rgba(40, 54, 69, .1);
     min-height: 70.3px;
     margin-left: 55px;
-    padding-bottom: 0;
   }
 
   .instrument--last-child {

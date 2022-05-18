@@ -54,7 +54,7 @@
   padding-right: 12px;
 }
 
-.page-header__toggle-close:hover {
+.page-header__toggle-open:hover {
   filter: invert(40%) sepia(78%) saturate(7114%) hue-rotate(330deg) brightness(86%) contrast(89%);
 }
 
@@ -81,13 +81,14 @@
     margin: 0 auto;
     flex-direction: row;
     background-color: hsla(0, 0%, 0%, 0.3);
+    z-index: 1;
   }
   .page-header__wrapper {
     width: 450px;
     border-bottom: none;
     background-color: transparent;
   }
-  .page-header__toggle-close {
+  .page-header__toggle-open {
     display: none;
   }
 }
