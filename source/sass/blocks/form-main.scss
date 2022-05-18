@@ -36,14 +36,6 @@
   display: none;
 }
 
-.form-main__form {
-  display: flex;
-  flex-direction: column;
-  width: 320px;
-  align-items: center;
-  margin: 0 auto;
-}
-
 .form-main__modal {
   display: flex;
   position: fixed;
@@ -84,10 +76,6 @@
     display: inline;
   }
 
-  .form-main__form {
-    display: grid;
-    width: 660px;
-  }
   .form-main__modal {
     display: flex;
     position: fixed;
@@ -127,10 +115,6 @@
     display: inline;
   }
 
-  .form-main__form {
-    display: grid;
-    width: 1200px;
-  }
   .form-main__modal {
     display: flex;
     position: fixed;
