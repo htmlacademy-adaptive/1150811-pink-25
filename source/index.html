@@ -4,8 +4,8 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.min.css" rel="stylesheet">
-    <link href="fonts/opensans.woff" rel="preload" as="font" crossirigin="anonymous">
-    <link href="fonts/opensans.woff2" rel="preload" as="font" crossirigin="anonymous">
+    <link href="fonts/opensans.woff" rel="preload" as="font" crossorigin="anonymous">
+    <link href="fonts/opensans.woff2" rel="preload" as="font" crossorigin="anonymous">
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/faviconimg/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
@@ -20,7 +20,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="js/manifest.json">
     <meta name="msapplication-TileColor" content="#FFFFFF">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#FFFFFF">
@@ -62,9 +62,9 @@
           <h2 class="intro__heading visually-hidden">Приложение Pink</h2>
           <p class="intro__slogan slogan">Взгляните на жизнь иначе!</p>
           <picture class="intro__main-image">
-            <source media="(min-width: 1200px)" srcset="img/phone-desktop.png, img/phone-desktop@2x.png 2x">
-            <source media="(min-width: 660px)" srcset="img/phone-tablet.png 1x, img/phone-tablet@2x.png 2x">
-            <img src="img/phone-mobile.png" srcset="img/phone-mobile.png 1x, img/phone-mobile@2x.png 2x" alt="Смартфон в руке">
+            <source media="(min-width: 1200px)" srcset="img/phone-desktop.webp, img/phone-desktop@2x.webp 2x">
+            <source media="(min-width: 660px)" srcset="img/phone-tablet.webp 1x, img/phone-tablet@2x.webp 2x">
+            <img src="img/phone-mobile.png" srcset="img/phone-mobile.webp 1x, img/phone-mobile@2x.webp 2x" alt="Смартфон в руке">
           </picture>
           <a class="intro__main-link main-link" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
           <ul class="intro__market-links market-links">
@@ -174,19 +174,19 @@
                 <p class="tariffes__value">1,99 USD</p>
               </li>
               <li class="tariffes__tag">
-                <p class="tarrifes__feature">Розовый фильтр</p>
+                <p class="tariffes__feature">Розовый фильтр</p>
                 <svg class="tariffes__tag-yes" width="31" height="21" viewBox="0 0 31 21">
                   <use href="img/sprite.svg#yes-icon"></use>
                 </svg>
               </li>
               <li class="tariffes__tag">
-                <p class="tarrifes__feature">Смайлики</p>
+                <p class="tariffes__feature">Смайлики</p>
                 <svg class="tariffes__tag-no" width="27" height="27" viewBox="0 0 27 27">
                   <use href="img/sprite.svg#no-icon"></use>
                 </svg>
               </li>
               <li class="tariffes__tag">
-                <p class="tarrifes__feature">Комментарии</p>
+                <p class="tariffes__feature">Комментарии</p>
                 <svg class="tariffes__tag-no" width="27" height="27" viewBox="0 0 27 27">
                   <use href="img/sprite.svg#no-icon"></use>
                 </svg>
@@ -201,19 +201,19 @@
                 <p class="tariffes__value">3,99 USD</p>
               </li>
               <li class="tariffes__tag">
-                <p class="tarrifes__feature">Розовый фильтр</p>
+                <p class="tariffes__feature">Розовый фильтр</p>
                 <svg class="tariffes__tag-yes" width="31" height="21" viewBox="0 0 31 21">
                   <use href="img/sprite.svg#yes-icon"></use>
                 </svg>
               </li>
               <li class="tariffes__tag">
-                <p class="tarrifes__feature">Смайлики</p>
+                <p class="tariffes__feature">Смайлики</p>
                 <svg class="tariffes__tag-yes" width="31" height="21" viewBox="0 0 31 21">
                   <use href="img/sprite.svg#yes-icon"></use>
                 </svg>
               </li>
               <li class="tariffes__tag">
-                <p class="tarrifes__feature">Комментарии</p>
+                <p class="tariffes__feature">Комментарии</p>
                 <svg class="tariffes__tag-no" width="27" height="27" viewBox="0 0 27 27">
                   <use href="img/sprite.svg#yes-icon"></use>
                 </svg>
@@ -226,19 +226,19 @@
                 <p class="tariffes__value">9,99 USD</p>
               </li>
               <li class="tariffes__tag">
-                <p class="tarrifes__feature">Розовый фильтр</p>
+                <p class="tariffes__feature">Розовый фильтр</p>
                 <svg class="tariffes__tag-yes" width="31" height="21" viewBox="0 0 31 21">
                   <use href="img/sprite.svg#yes-icon"></use>
                 </svg>
               </li>
               <li class="tariffes__tag">
-                <p class="tarrifes__feature">Смайлики</p>
+                <p class="tariffes__feature">Смайлики</p>
                 <svg class="tariffes__tag-yes" width="31" height="21" viewBox="0 0 31 21">
                   <use href="img/sprite.svg#yes-icon"></use>
                 </svg>
               </li>
               <li class="tariffes__tag tariffes__tag--right-border-radius">
-                <p class="tarrifes__feature">Комментарии</p>
+                <p class="tariffes__feature">Комментарии</p>
                 <svg class="tariffes__tag-yes" width="31" height="21" viewBox="0 0 31 21">
                   <use href="img/sprite.svg#yes-icon"></use>
                 </svg>
@@ -298,6 +298,7 @@
         <ul class="page-footer__socials socials-list">
           <li class="socials-list__item socials-icon">
             <a href="https://vk.com/htmlacademy" class="socials-icon__link-vkontakte">
+              <span class="visually-hidden">Vkontakte</span>
               <svg class="socials-icon__vkontakte-image" width="54" height="54" viewBox="0 0 54 54" fill="none">
               <g class="socials-icon__vkontakte-cirle">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M54 27C54 41.9117 41.9117 54 27 54C12.0883 54 0 41.9117 0 27C0 12.0883 12.0883 0 27 0C41.9117 0 54 12.0883 54 27ZM27 51C40.2548 51 51 40.2548 51 27C51 13.7452 40.2548 3 27 3C13.7452 3 3 13.7452 3 27C3 40.2548 13.7452 51 27 51Z" fill-opacity="0.1" fill="#283645"/>
@@ -315,6 +316,7 @@
           </li>
           <li class="socials-list__item socials-icon">
             <a href="https://t.me/s/htmlacademy" class="socials-icon__link-telegram">
+              <span class="visually-hidden">Telegram</span>
               <svg class="socials-icon__telegram-image" width="54" height="54" viewBox="0 0 54 54" fill="none">
               <g class="socials-icon__telegram-circle">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M54 27C54 41.9117 41.9117 54 27 54C12.0883 54 0 41.9117 0 27C0 12.0883 12.0883 0 27 0C41.9117 0 54 12.0883 54 27ZM27 51C40.2548 51 51 40.2548 51 27C51 13.7452 40.2548 3 27 3C13.7452 3 3 13.7452 3 27C3 40.2548 13.7452 51 27 51Z" fill-opacity="0.1" fill="#283645"/>
@@ -325,6 +327,7 @@
           </li>
           <li class="socials-list__item socials-icon">
             <a href="https://www.youtube.com/c/HTMLAcademyRUS" class="socials-icon__link-youtube">
+              <span class="visually-hidden">Youtube</span>
               <svg class="socials-icon__youtube-image" width="54" height="54" viewBox="0 0 54 54" fill="none">
               <g class="socials-icon__youtube-circle">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M54 27C54 41.9117 41.9117 54 27 54C12.0883 54 0 41.9117 0 27C0 12.0883 12.0883 0 27 0C41.9117 0 54 12.0883 54 27ZM27 51C40.2548 51 51 40.2548 51 27C51 13.7452 40.2548 3 27 3C13.7452 3 3 13.7452 3 27C3 40.2548 13.7452 51 27 51Z" fill-opacity="0.1" fill="#283645"/>
